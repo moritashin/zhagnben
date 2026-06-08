@@ -469,8 +469,45 @@ const Pages = {
       catBudgetEl.classList.add('hidden');
     }
 
+    // 支出分类列表
+    const catListEl = document.getElementById('category-list');
+    const expenseItems = items.filter(t => t.type === 'expense');
+    if (expenseItems.length === 0) {
+      catListEl.innerHTML = '<div class="text-center text-gray-400 text-sm py-4">暂无支出数据</div>';
+    } else {
+      const grouped = {};
+      expenseItems.forEach(t => {
+        grouped[t.category] = (grouped[t.category] || 0) + t.amount;
+      });
+      const sorted = Object.entries(grouped).sort((a, b) => b[1] - a[1]);
+      const total = expenseItems.reduce((s, t) => s + t.amount, 0);
+
+      catListEl.innerHTML = sorted.map(([name, amount]) => {
+        const meta = Storage.getCategoryMeta(name);
+        const pct = ((amount / total) * 100).toFixed(1);
+        return `
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center text-base shrink-0" style="background:${meta.color}18">
+              ${meta.icon}
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-medium">${name}</span>
+                <span class="text-sm font-bold">${formatCurrency(amount)}</span>
+              </div>
+              <div class="flex items-center gap-2 mt-1">
+                <div class="flex-1 bg-gray-100 rounded-full h-1.5">
+                  <div class="h-1.5 rounded-full" style="width:${pct}%;background:${meta.color}"></div>
+                </div>
+                <span class="text-xs text-gray-400 w-10 text-right">${pct}%</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
     Charts.destroy();
-    Charts.renderCategory(items);
     Charts.renderTrend(items, month);
 
     // 同时刷新全年统计
