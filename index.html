@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#1f2937">
+  <title>账本</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231f2937' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle'%3E%F0%9F%93%92%3C/text%3E%3C/svg%3E">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <div id="app" class="max-w-md mx-auto min-h-screen flex flex-col relative">
+    <!-- ===== 记账页面 ===== -->
+    <section id="page-add" class="page flex-1 flex flex-col overflow-y-auto pb-28">
+      <header class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-10 px-4 py-3">
+        <h1 class="text-lg font-bold text-center">记一笔</h1>
+      </header>
+
+      <div class="p-4 space-y-5">
+        <!-- 类型切换 -->
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-xl p-1 flex">
+          <button id="btn-expense" class="type-btn flex-1 py-2.5 rounded-lg text-sm font-medium transition-all bg-white dark:bg-gray-600 text-red-500 shadow-sm" data-type="expense">支出</button>
+          <button id="btn-income" class="type-btn flex-1 py-2.5 rounded-lg text-sm font-medium transition-all text-gray-500 dark:text-gray-300" data-type="income">收入</button>
+        </div>
+
+        <!-- 金额输入 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-5">
+          <label class="text-xs text-gray-400 dark:text-gray-500 mb-1 block">金额</label>
+          <div class="flex items-baseline justify-center gap-2">
+            <span id="amount-symbol" class="text-2xl font-bold text-red-500 shrink-0">-</span>
+            <input id="input-amount" type="text" inputmode="decimal" placeholder="0.00"
+              class="text-4xl font-bold bg-transparent outline-none text-center min-w-[120px] max-w-[240px]"
+              style="caret-color: inherit;">
+          </div>
+        </div>
+
+        <!-- 分类选择 -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <label class="text-xs text-gray-400">分类</label>
+            <button id="btn-manage-cats" class="text-xs text-red-500 font-medium">管理分类</button>
+          </div>
+          <div id="category-grid" class="grid grid-cols-4 gap-3"></div>
+        </div>
+
+        <!-- 日期 -->
+        <div class="bg-white rounded-xl border border-gray-100 p-4">
+          <label class="text-xs text-gray-400 mb-1 block">日期</label>
+          <input id="input-date" type="datetime-local" class="w-full bg-transparent outline-none text-base">
+        </div>
+
+        <!-- 备注 -->
+        <div class="bg-white rounded-xl border border-gray-100 p-4">
+          <label class="text-xs text-gray-400 mb-1 block">备注（可选）</label>
+          <input id="input-note" type="text" placeholder="写点什么..." class="w-full bg-transparent outline-none text-base" maxlength="50">
+        </div>
+
+        <!-- 保存按钮 -->
+        <button id="btn-save" class="w-full py-4 rounded-xl text-white font-bold text-lg transition-all bg-red-500 hover:bg-red-600 active:scale-[0.98] shadow-lg shadow-red-500/25">
+          保存
+        </button>
+
+        <div id="save-toast" class="fixed top-4 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm opacity-0 pointer-events-none transition-opacity z-50">
+          已保存
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 明细页面 ===== -->
+    <section id="page-list" class="page hidden flex-1 flex flex-col overflow-hidden">
+      <header class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-10 px-4 py-3">
+        <h1 class="text-lg font-bold text-center">收支明细</h1>
+      </header>
+
+      <div class="flex items-center gap-3 px-4 py-3 bg-white border-b border-gray-100">
+        <select id="filter-month" class="bg-gray-100 rounded-lg px-3 py-2 text-sm outline-none flex-1"></select>
+        <select id="filter-type" class="bg-gray-100 rounded-lg px-3 py-2 text-sm outline-none w-24">
+          <option value="all">全部</option>
+          <option value="expense">支出</option>
+          <option value="income">收入</option>
+        </select>
+      </div>
+
+      <!-- 汇总卡片 -->
+      <div class="grid grid-cols-2 gap-3 px-4 py-3 bg-gray-50">
+        <div class="bg-green-50 rounded-xl p-3">
+          <div class="text-xs text-green-600 mb-0.5">收入</div>
+          <div id="summary-income" class="text-lg font-bold text-green-600 truncate">¥0.00</div>
+        </div>
+        <div class="bg-red-50 rounded-xl p-3">
+          <div class="text-xs text-red-600 mb-0.5">支出</div>
+          <div id="summary-expense" class="text-lg font-bold text-red-600 truncate">¥0.00</div>
+        </div>
+      </div>
+
+      <div id="list-container" class="flex-1 overflow-y-auto px-4 pb-28 space-y-1">
+        <div id="list-empty" class="text-center py-20 text-gray-400">
+          <div class="text-4xl mb-3">📝</div>
+          <div class="text-sm">本月还没有记录</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 统计页面 ===== -->
+    <section id="page-stats" class="page hidden flex-1 flex flex-col overflow-hidden">
+      <header class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-10 px-4 py-3">
+        <h1 class="text-lg font-bold text-center">统计</h1>
+      </header>
+
+      <div class="flex-1 overflow-y-auto pb-40">
+        <div class="px-4 py-3">
+          <select id="stats-month" class="bg-gray-100 rounded-lg px-3 py-2 text-sm outline-none w-full mb-4"></select>
+
+          <!-- 汇总 -->
+          <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-green-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-green-600 mb-0.5">收入</div>
+              <div id="stats-income" class="text-base font-bold text-green-600 truncate">¥0.00</div>
+            </div>
+            <div class="bg-red-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-red-600 mb-0.5">支出</div>
+              <div id="stats-expense" class="text-base font-bold text-red-600 truncate">¥0.00</div>
+            </div>
+            <div class="bg-blue-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-blue-600 mb-0.5">结余</div>
+              <div id="stats-balance" class="text-base font-bold text-blue-600 truncate">¥0.00</div>
+            </div>
+          </div>
+
+          <!-- 月预算 -->
+          <div id="budget-monthly" class="bg-white rounded-2xl border border-gray-100 p-4 mb-4 hidden">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-sm font-bold">本月预算</h3>
+              <span id="budget-monthly-text" class="text-xs text-gray-500"></span>
+            </div>
+            <div class="w-full bg-gray-100 rounded-full h-2.5 mb-2 overflow-hidden">
+              <div id="budget-monthly-bar" class="h-2.5 rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between text-xs">
+              <span id="budget-monthly-spent" class="text-gray-500"></span>
+              <span id="budget-monthly-remain" class="text-gray-500"></span>
+            </div>
+          </div>
+
+          <!-- 分类饼图 -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-4 mb-4">
+            <h3 class="text-sm font-bold mb-3">支出分类占比</h3>
+            <div class="h-52 relative">
+              <canvas id="chart-category"></canvas>
+              <div id="chart-category-empty" class="hidden absolute inset-0 flex items-center justify-center text-gray-400 text-sm">暂无支出数据</div>
+            </div>
+          </div>
+
+          <!-- 趋势图 -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-4 mb-4">
+            <h3 class="text-sm font-bold mb-3">每日趋势</h3>
+            <div class="h-48 relative">
+              <canvas id="chart-trend"></canvas>
+              <div id="chart-trend-empty" class="hidden absolute inset-0 flex items-center justify-center text-gray-400 text-sm">暂无数据</div>
+            </div>
+          </div>
+
+          <!-- ===== 全年统计 ===== -->
+          <div class="border-t-2 border-gray-200 pt-5 mb-4">
+            <h2 class="text-base font-bold mb-4 text-center">📊 全年统计</h2>
+
+            <select id="stats-year" class="bg-gray-100 rounded-lg px-3 py-2 text-sm outline-none w-full mb-4"></select>
+
+            <!-- 年度汇总 -->
+            <div class="grid grid-cols-3 gap-3 mb-4">
+              <div class="bg-green-50 rounded-xl p-3 text-center">
+                <div class="text-xs text-green-600 mb-0.5">年收入</div>
+                <div id="year-income" class="text-base font-bold text-green-600 truncate">¥0.00</div>
+              </div>
+              <div class="bg-red-50 rounded-xl p-3 text-center">
+                <div class="text-xs text-red-600 mb-0.5">年支出</div>
+                <div id="year-expense" class="text-base font-bold text-red-600 truncate">¥0.00</div>
+              </div>
+              <div class="bg-blue-50 rounded-xl p-3 text-center">
+                <div class="text-xs text-blue-600 mb-0.5">年结余</div>
+                <div id="year-balance" class="text-base font-bold text-blue-600 truncate">¥0.00</div>
+              </div>
+            </div>
+
+            <!-- 年度分类统计 -->
+            <div class="bg-white rounded-2xl border border-gray-100 p-4 mb-4">
+              <h3 class="text-sm font-bold mb-3">年度分类汇总</h3>
+              <div id="year-category-list" class="space-y-2 max-h-64 overflow-y-auto">
+                <div class="text-center text-gray-400 text-sm py-4">暂无数据</div>
+              </div>
+            </div>
+
+            <!-- 月度趋势 -->
+            <div class="bg-white rounded-2xl border border-gray-100 p-4 mb-4">
+              <h3 class="text-sm font-bold mb-3">月度收支趋势</h3>
+              <div class="h-48 relative">
+                <canvas id="chart-year-trend"></canvas>
+                <div id="chart-year-trend-empty" class="hidden absolute inset-0 flex items-center justify-center text-gray-400 text-sm">暂无数据</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 分类预算 -->
+          <div id="budget-categories" class="bg-white rounded-2xl border border-gray-100 p-4 mb-4 hidden">
+            <h3 class="text-sm font-bold mb-3">分类年预算</h3>
+            <div id="budget-category-list" class="space-y-3"></div>
+          </div>
+
+          <!-- 预算设置 -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-4 mb-4">
+            <button id="btn-budget-toggle" class="w-full flex items-center justify-between text-sm font-bold">
+              <span>预算设置</span>
+              <svg id="budget-arrow" class="w-4 h-4 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="budget-settings" class="hidden mt-4 space-y-4">
+              <div>
+                <label class="text-xs text-gray-500 mb-1 block">月预算（支出上限）</label>
+                <div class="flex gap-2">
+                  <input id="input-monthly-budget" type="number" inputmode="decimal" placeholder="0" class="flex-1 bg-gray-100 rounded-lg px-3 py-2 text-sm outline-none">
+                  <button id="btn-save-monthly" class="px-4 py-2 bg-red-500 text-white rounded-lg text-sm font-medium">保存</button>
+                </div>
+              </div>
+              <div>
+                <label class="text-xs text-gray-500 mb-2 block">分类年预算</label>
+                <div id="budget-category-inputs" class="space-y-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 数据备份 -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-4">
+            <h3 class="text-sm font-bold mb-3">数据备份</h3>
+            <div class="space-y-3">
+              <button id="btn-export" class="w-full py-3 rounded-xl bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-white font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                导出备份
+              </button>
+              <label class="w-full py-3 rounded-xl bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-white font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors flex items-center justify-center gap-2 cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                导入备份
+                <input id="btn-import" type="file" accept=".json" class="hidden">
+              </label>
+            </div>
+            <p class="text-xs text-gray-400 mt-3 text-center">数据仅保存在本机，建议定期备份</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 分类管理弹窗 ===== -->
+    <div id="cat-modal" class="fixed inset-0 z-50 hidden">
+      <div class="absolute inset-0 bg-black/50" id="cat-modal-overlay"></div>
+      <div class="absolute bottom-0 left-0 right-0 bg-white rounded-t-3xl max-h-[85vh] flex flex-col">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+          <h2 class="text-lg font-bold">管理分类</h2>
+          <button id="cat-modal-close" class="p-2 text-gray-400">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div class="flex-1 overflow-y-auto p-5 space-y-4">
+          <!-- 当前分类列表 -->
+          <div id="cat-list" class="space-y-2"></div>
+          <!-- 添加新分类 -->
+          <div class="pt-4 border-t border-gray-100">
+            <h3 class="text-sm font-bold mb-3">添加分类</h3>
+            <div class="space-y-3">
+              <div class="flex gap-2">
+                <input id="new-cat-icon" type="text" placeholder="图标" maxlength="2" class="w-14 bg-gray-100 rounded-lg px-2 py-2 text-center text-lg outline-none">
+                <input id="new-cat-name" type="text" placeholder="分类名称" class="flex-1 bg-gray-100 rounded-lg px-3 py-2 text-sm outline-none">
+              </div>
+              <div class="flex gap-2 items-center">
+                <input id="new-cat-color" type="color" value="#FF6B6B" class="w-10 h-10 rounded-lg border-0 cursor-pointer">
+                <select id="new-cat-type" class="flex-1 bg-gray-100 rounded-lg px-3 py-2 text-sm outline-none">
+                  <option value="expense">支出</option>
+                  <option value="income">收入</option>
+                </select>
+                <button id="btn-add-cat" class="px-4 py-2 bg-red-500 text-white rounded-lg text-sm font-medium">添加</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 底部导航 ===== -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 z-40">
+      <div class="max-w-md mx-auto flex">
+        <button class="nav-btn flex-1 py-3 flex flex-col items-center gap-0.5 text-red-500" data-page="add">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+          <span class="text-[10px]">记账</span>
+        </button>
+        <button class="nav-btn flex-1 py-3 flex flex-col items-center gap-0.5 text-gray-400" data-page="list">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          <span class="text-[10px]">明细</span>
+        </button>
+        <button class="nav-btn flex-1 py-3 flex flex-col items-center gap-0.5 text-gray-400" data-page="stats">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+          <span class="text-[10px]">统计</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

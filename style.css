@@ -1,0 +1,142 @@
+/* ===== 基础 ===== */
+html, body {
+  height: 100%;
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ===== 页面切换动画 ===== */
+.page {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.page.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page.hidden {
+  display: none !important;
+}
+
+/* ===== 隐藏数字输入框的上下箭头 ===== */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ===== 自定义滚动条 ===== */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 2px;
+}
+
+/* ===== 分类按钮悬停 ===== */
+.cat-btn:active {
+  transform: scale(0.95);
+}
+
+/* ===== Toast 动画 ===== */
+#save-toast {
+  transition: opacity 0.3s ease;
+}
+
+/* ===== 电脑端适配 ===== */
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  }
+
+  #app {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: calc(100vh - 4rem);
+    background: white;
+    overflow: hidden;
+  }
+}
+
+/* ===== 安全区域（iPhone 底部横条） ===== */
+nav {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+/* ===== 深色模式（跟随系统） ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  #app {
+    background-color: #111827;
+  }
+
+  .bg-white {
+    background-color: #1f2937 !important;
+  }
+
+  .bg-gray-50 {
+    background-color: #111827 !important;
+  }
+
+  .bg-gray-100 {
+    background-color: #374151 !important;
+  }
+
+  .text-gray-900 {
+    color: #f9fafb !important;
+  }
+
+  .text-gray-400 {
+    color: #9ca3af !important;
+  }
+
+  .text-gray-500 {
+    color: #6b7280 !important;
+  }
+
+  .border-gray-100 {
+    border-color: #374151 !important;
+  }
+
+  .border-gray-50 {
+    border-color: #1f2937 !important;
+  }
+
+  header {
+    background-color: rgba(31, 41, 55, 0.8) !important;
+    border-color: #374151 !important;
+  }
+
+  nav {
+    background-color: #1f2937 !important;
+    border-color: #374151 !important;
+  }
+
+  input, select {
+    color: #f9fafb;
+    background-color: transparent;
+  }
+
+  #list-empty {
+    color: #6b7280 !important;
+  }
+}

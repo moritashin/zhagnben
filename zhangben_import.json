@@ -1,0 +1,3559 @@
+{
+  "transactions": [
+    {
+      "id": "8258f1a3-c2ea-4fc7-bc29-c3171e65299e",
+      "amount": 109.21,
+      "type": "expense",
+      "category": "保健品",
+      "note": "益生菌",
+      "date": "2026-06-08T12:00:00",
+      "createdAt": "2026-06-08T12:00:00"
+    },
+    {
+      "id": "e8e79e6a-9f9f-4276-b27b-2df7251a5f54",
+      "amount": 30.2,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-06-08T12:00:00",
+      "createdAt": "2026-06-08T12:00:00"
+    },
+    {
+      "id": "95a87a34-1440-4071-965b-bc5c8b5095a7",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-06-08T12:00:00",
+      "createdAt": "2026-06-08T12:00:00"
+    },
+    {
+      "id": "cfddebb8-09ba-4a67-ad3f-14066b945796",
+      "amount": 26.36,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-06-06T12:00:00",
+      "createdAt": "2026-06-06T12:00:00"
+    },
+    {
+      "id": "62509b96-d2a3-4aa6-b5cb-9c717fcaf1c5",
+      "amount": 9.75,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-06-04T12:00:00",
+      "createdAt": "2026-06-04T12:00:00"
+    },
+    {
+      "id": "0cb6f050-5791-4283-90dc-b3d0c4ee30af",
+      "amount": 12.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-06-03T12:00:00",
+      "createdAt": "2026-06-03T12:00:00"
+    },
+    {
+      "id": "bdc1e718-1f98-47af-8a74-8d7b05c6aa93",
+      "amount": 14.8,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-06-03T12:00:00",
+      "createdAt": "2026-06-03T12:00:00"
+    },
+    {
+      "id": "28ca3d0f-3e00-4544-b3ad-8d4a140980c2",
+      "amount": 105.03,
+      "type": "expense",
+      "category": "零食",
+      "note": "",
+      "date": "2026-06-03T12:00:00",
+      "createdAt": "2026-06-03T12:00:00"
+    },
+    {
+      "id": "3814f177-0f0f-4b0e-8c06-0aa2990a0cf7",
+      "amount": 20.71,
+      "type": "expense",
+      "category": "零食",
+      "note": "",
+      "date": "2026-06-03T12:00:00",
+      "createdAt": "2026-06-03T12:00:00"
+    },
+    {
+      "id": "f4d847a5-3d1e-4632-becb-9ba38d3ae22f",
+      "amount": 12.41,
+      "type": "expense",
+      "category": "零食",
+      "note": "",
+      "date": "2026-06-03T12:00:00",
+      "createdAt": "2026-06-03T12:00:00"
+    },
+    {
+      "id": "11ee2c59-343a-4ad7-9679-216ecf801dbe",
+      "amount": 10.49,
+      "type": "expense",
+      "category": "零食",
+      "note": "",
+      "date": "2026-06-03T12:00:00",
+      "createdAt": "2026-06-03T12:00:00"
+    },
+    {
+      "id": "9b5dc6f4-4ee9-412e-8b61-74b2ae3873e6",
+      "amount": 11.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-06-03T12:00:00",
+      "createdAt": "2026-06-03T12:00:00"
+    },
+    {
+      "id": "d33e972a-5bb7-46b8-8913-16c6cedd2ea0",
+      "amount": 4.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-06-01T12:00:00",
+      "createdAt": "2026-06-01T12:00:00"
+    },
+    {
+      "id": "b92cb293-3a9c-4516-95d0-99a156b29ae7",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-06-01T12:00:00",
+      "createdAt": "2026-06-01T12:00:00"
+    },
+    {
+      "id": "470adf5f-82ed-448f-b5b5-b547e43f5551",
+      "amount": 83.59,
+      "type": "expense",
+      "category": "衣服",
+      "note": "",
+      "date": "2026-06-01T12:00:00",
+      "createdAt": "2026-06-01T12:00:00"
+    },
+    {
+      "id": "95010dc7-70bc-45ab-a0af-5e8f933ccbc7",
+      "amount": 96.7,
+      "type": "expense",
+      "category": "衣服",
+      "note": "",
+      "date": "2026-06-01T12:00:00",
+      "createdAt": "2026-06-01T12:00:00"
+    },
+    {
+      "id": "f52b18c1-483c-4eb5-8acf-816997f34c4e",
+      "amount": 113.41,
+      "type": "expense",
+      "category": "衣服",
+      "note": "",
+      "date": "2026-06-01T12:00:00",
+      "createdAt": "2026-06-01T12:00:00"
+    },
+    {
+      "id": "9ec151b8-61ee-456c-837d-f167e5707471",
+      "amount": 95.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-31T12:00:00",
+      "createdAt": "2026-05-31T12:00:00"
+    },
+    {
+      "id": "e696a91b-fa3f-4132-9475-623d800887cc",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "奶茶",
+      "note": "",
+      "date": "2026-05-31T12:00:00",
+      "createdAt": "2026-05-31T12:00:00"
+    },
+    {
+      "id": "6ba9352e-2a99-4e3e-99ab-579c2ad49b5a",
+      "amount": 3.5,
+      "type": "expense",
+      "category": "出行",
+      "note": "",
+      "date": "2026-05-31T12:00:00",
+      "createdAt": "2026-05-31T12:00:00"
+    },
+    {
+      "id": "f0ef195e-1fc1-44f8-9245-e2ec8746a057",
+      "amount": 19.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-31T12:00:00",
+      "createdAt": "2026-05-31T12:00:00"
+    },
+    {
+      "id": "fcf349e1-07ed-4016-a2bf-25ea9170cfe8",
+      "amount": 23.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-31T12:00:00",
+      "createdAt": "2026-05-31T12:00:00"
+    },
+    {
+      "id": "595de91b-7f9e-4a54-8037-fd4891bb56ec",
+      "amount": 10.49,
+      "type": "expense",
+      "category": "出行",
+      "note": "",
+      "date": "2026-05-31T12:00:00",
+      "createdAt": "2026-05-31T12:00:00"
+    },
+    {
+      "id": "e7f7c1c7-d8f4-4eb0-86bb-450b7297120d",
+      "amount": 9.49,
+      "type": "expense",
+      "category": "出行",
+      "note": "",
+      "date": "2026-05-31T12:00:00",
+      "createdAt": "2026-05-31T12:00:00"
+    },
+    {
+      "id": "0b8f3bd7-3abc-4b27-afb6-358a4829533a",
+      "amount": 71.99,
+      "type": "expense",
+      "category": "出行",
+      "note": "火车票",
+      "date": "2026-05-31T12:00:00",
+      "createdAt": "2026-05-31T12:00:00"
+    },
+    {
+      "id": "0d1bf292-f15b-4a48-920d-c9863e98fea2",
+      "amount": 19.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-30T12:00:00",
+      "createdAt": "2026-05-30T12:00:00"
+    },
+    {
+      "id": "433e30b2-4d46-41f9-91bd-52d9fa00d2fc",
+      "amount": 24.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-30T12:00:00",
+      "createdAt": "2026-05-30T12:00:00"
+    },
+    {
+      "id": "8f77d73a-d9c7-499e-9543-7ad079e2aade",
+      "amount": 13.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-29T12:00:00",
+      "createdAt": "2026-05-29T12:00:00"
+    },
+    {
+      "id": "1925320a-e897-4940-8298-10876eec4f86",
+      "amount": 14.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-29T12:00:00",
+      "createdAt": "2026-05-29T12:00:00"
+    },
+    {
+      "id": "40a9a6a9-3a16-4c96-b982-1fa346b4d8ac",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-28T12:00:00",
+      "createdAt": "2026-05-28T12:00:00"
+    },
+    {
+      "id": "be9b146e-cd1f-47dd-b6bc-6e759f642a6b",
+      "amount": 72.0,
+      "type": "expense",
+      "category": "出行",
+      "note": "火车票",
+      "date": "2026-05-28T12:00:00",
+      "createdAt": "2026-05-28T12:00:00"
+    },
+    {
+      "id": "1ab18b5b-9b49-4c2b-a45c-47796f166a17",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-28T12:00:00",
+      "createdAt": "2026-05-28T12:00:00"
+    },
+    {
+      "id": "9d5c0c62-5a48-4ad8-ab29-8ad1442b03ff",
+      "amount": 18.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-28T12:00:00",
+      "createdAt": "2026-05-28T12:00:00"
+    },
+    {
+      "id": "d5269095-3f03-4fa0-bf0b-2f399ce52c99",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-27T12:00:00",
+      "createdAt": "2026-05-27T12:00:00"
+    },
+    {
+      "id": "fcd451b4-1ec0-4008-8c46-8376a6585ba2",
+      "amount": 200.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-05-27T12:00:00",
+      "createdAt": "2026-05-27T12:00:00"
+    },
+    {
+      "id": "a84418d6-4588-48ae-a74b-88f027436da0",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-27T12:00:00",
+      "createdAt": "2026-05-27T12:00:00"
+    },
+    {
+      "id": "718f3fb8-d1d8-4f93-aed6-094886872437",
+      "amount": 15.5,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-27T12:00:00",
+      "createdAt": "2026-05-27T12:00:00"
+    },
+    {
+      "id": "421e86ea-d651-4f12-a3b5-852685880336",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-25T12:00:00",
+      "createdAt": "2026-05-25T12:00:00"
+    },
+    {
+      "id": "77200b7e-3b79-4de0-a190-94afe72b56de",
+      "amount": 26.4,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-23T12:00:00",
+      "createdAt": "2026-05-23T12:00:00"
+    },
+    {
+      "id": "5030dae9-3050-4d41-8b31-a1db192a399e",
+      "amount": 41.6,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-23T12:00:00",
+      "createdAt": "2026-05-23T12:00:00"
+    },
+    {
+      "id": "ef5c108c-9717-4bd9-bc8a-d9f6f9d71aaf",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-22T12:00:00",
+      "createdAt": "2026-05-22T12:00:00"
+    },
+    {
+      "id": "5c593730-7f43-4f3f-8335-db6a57a205cd",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-21T12:00:00",
+      "createdAt": "2026-05-21T12:00:00"
+    },
+    {
+      "id": "b03dcb11-e9cf-4f06-95a4-1316e3705f6a",
+      "amount": 8.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-21T12:00:00",
+      "createdAt": "2026-05-21T12:00:00"
+    },
+    {
+      "id": "ce4919b1-1f30-4308-b14f-a0b1e00f8f96",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-20T12:00:00",
+      "createdAt": "2026-05-20T12:00:00"
+    },
+    {
+      "id": "6bc4e85c-e48c-4658-8ba0-1f172dedf90d",
+      "amount": 594.77,
+      "type": "expense",
+      "category": "分期",
+      "note": "",
+      "date": "2026-05-20T12:00:00",
+      "createdAt": "2026-05-20T12:00:00"
+    },
+    {
+      "id": "d2912fc3-7ccc-4503-a912-3323b051c9d1",
+      "amount": 627.0,
+      "type": "expense",
+      "category": "衣服",
+      "note": "",
+      "date": "2026-05-20T12:00:00",
+      "createdAt": "2026-05-20T12:00:00"
+    },
+    {
+      "id": "7d6b03b4-2172-407f-9c92-d3d0f09f0d4d",
+      "amount": 7.5,
+      "type": "expense",
+      "category": "奶茶",
+      "note": "",
+      "date": "2026-05-20T12:00:00",
+      "createdAt": "2026-05-20T12:00:00"
+    },
+    {
+      "id": "c7e6ecb3-7717-4f1d-bd2d-28565e999568",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-19T12:00:00",
+      "createdAt": "2026-05-19T12:00:00"
+    },
+    {
+      "id": "30cce447-6485-46b0-b35d-ed86fa1f56c0",
+      "amount": 13.3,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-19T12:00:00",
+      "createdAt": "2026-05-19T12:00:00"
+    },
+    {
+      "id": "79243a5e-730b-4b69-b7a8-7f320e4a595a",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-19T12:00:00",
+      "createdAt": "2026-05-19T12:00:00"
+    },
+    {
+      "id": "40684ba9-5774-4abb-8ad9-ce46f33552fe",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-19T12:00:00",
+      "createdAt": "2026-05-19T12:00:00"
+    },
+    {
+      "id": "eafcd4bd-7cd5-40ac-abc9-2d6d9f9c60df",
+      "amount": 49.31,
+      "type": "expense",
+      "category": "购物",
+      "note": "小风扇",
+      "date": "2026-05-19T12:00:00",
+      "createdAt": "2026-05-19T12:00:00"
+    },
+    {
+      "id": "82d91604-ad94-4aa8-b9d3-b193a52bf203",
+      "amount": 11.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-17T12:00:00",
+      "createdAt": "2026-05-17T12:00:00"
+    },
+    {
+      "id": "ad0abacc-d85b-4717-a824-73d7504783cc",
+      "amount": 29.9,
+      "type": "expense",
+      "category": "ai",
+      "note": "",
+      "date": "2026-05-17T12:00:00",
+      "createdAt": "2026-05-17T12:00:00"
+    },
+    {
+      "id": "081003d4-71b2-4281-b21a-1cae18374ec0",
+      "amount": 152.8,
+      "type": "expense",
+      "category": "ai",
+      "note": "",
+      "date": "2026-05-17T12:00:00",
+      "createdAt": "2026-05-17T12:00:00"
+    },
+    {
+      "id": "7afa6e90-0e09-4fdd-83d2-de4b655e1cb5",
+      "amount": 95.0,
+      "type": "expense",
+      "category": "工具",
+      "note": "mybatis",
+      "date": "2026-05-17T12:00:00",
+      "createdAt": "2026-05-17T12:00:00"
+    },
+    {
+      "id": "2adb11ec-9ec7-4fbb-bfd5-07d01d6e39e6",
+      "amount": 12.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-15T12:00:00",
+      "createdAt": "2026-05-15T12:00:00"
+    },
+    {
+      "id": "aba3ad97-2128-484a-8846-7370a09f37e3",
+      "amount": 18.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-15T12:00:00",
+      "createdAt": "2026-05-15T12:00:00"
+    },
+    {
+      "id": "65488e1a-63d6-4698-9173-c5aa1c9bedfb",
+      "amount": 21.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "icloud",
+      "date": "2026-05-15T12:00:00",
+      "createdAt": "2026-05-15T12:00:00"
+    },
+    {
+      "id": "4370b04f-824c-49ea-8b68-c4803fada5c8",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-14T12:00:00",
+      "createdAt": "2026-05-14T12:00:00"
+    },
+    {
+      "id": "bcd73196-5eab-48e9-bb32-ee7a9bf1e7ab",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-13T12:00:00",
+      "createdAt": "2026-05-13T12:00:00"
+    },
+    {
+      "id": "73142341-d229-4b1f-b69b-e93ebb80df20",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-13T12:00:00",
+      "createdAt": "2026-05-13T12:00:00"
+    },
+    {
+      "id": "12e2a0c6-78a3-4aff-a031-be3baac6dcc8",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-12T12:00:00",
+      "createdAt": "2026-05-12T12:00:00"
+    },
+    {
+      "id": "ab5bab55-3ef2-4685-b320-81bd57dc8702",
+      "amount": 2000.0,
+      "type": "expense",
+      "category": "年费",
+      "note": "idea",
+      "date": "2026-05-12T12:00:00",
+      "createdAt": "2026-05-12T12:00:00"
+    },
+    {
+      "id": "78bc829a-c1e2-414f-a3a5-753f4183303e",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-11T12:00:00",
+      "createdAt": "2026-05-11T12:00:00"
+    },
+    {
+      "id": "07675835-8d5b-4f1e-9d1c-e87da07bff3b",
+      "amount": 40.0,
+      "type": "expense",
+      "category": "驾照",
+      "note": "",
+      "date": "2026-05-11T12:00:00",
+      "createdAt": "2026-05-11T12:00:00"
+    },
+    {
+      "id": "80dcb39a-4c63-4fff-ad54-18dc9094a6e2",
+      "amount": 11.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-11T12:00:00",
+      "createdAt": "2026-05-11T12:00:00"
+    },
+    {
+      "id": "ff7ba39e-595d-4d5f-bfd3-378e6a8d7902",
+      "amount": 13.4,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-09T12:00:00",
+      "createdAt": "2026-05-09T12:00:00"
+    },
+    {
+      "id": "ca54ca14-fefb-432d-b4bb-c3a7da378c68",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-09T12:00:00",
+      "createdAt": "2026-05-09T12:00:00"
+    },
+    {
+      "id": "146a5e00-ebce-49b8-af2e-f252ef12cf39",
+      "amount": 4.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-09T12:00:00",
+      "createdAt": "2026-05-09T12:00:00"
+    },
+    {
+      "id": "64e783e1-3599-4c1c-8be2-aa9b5719854c",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-09T12:00:00",
+      "createdAt": "2026-05-09T12:00:00"
+    },
+    {
+      "id": "b437b8f7-aa6a-412f-b4c9-395a0509337b",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-09T12:00:00",
+      "createdAt": "2026-05-09T12:00:00"
+    },
+    {
+      "id": "1dbd1d43-7170-4460-b4b5-a3da07afbf44",
+      "amount": 15.9,
+      "type": "expense",
+      "category": "奶茶",
+      "note": "",
+      "date": "2026-05-09T12:00:00",
+      "createdAt": "2026-05-09T12:00:00"
+    },
+    {
+      "id": "404a465a-dd9e-430f-8d0b-2bca16fae123",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-08T12:00:00",
+      "createdAt": "2026-05-08T12:00:00"
+    },
+    {
+      "id": "a06504b9-98a0-44e3-8e67-496506107bb0",
+      "amount": 200.0,
+      "type": "expense",
+      "category": "驾照",
+      "note": "",
+      "date": "2026-05-06T12:00:00",
+      "createdAt": "2026-05-06T12:00:00"
+    },
+    {
+      "id": "b86cce08-5f25-486e-a9fb-31131dfe9485",
+      "amount": 24.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-06T12:00:00",
+      "createdAt": "2026-05-06T12:00:00"
+    },
+    {
+      "id": "77ec4c09-2fb6-4f43-bc34-d114b9fc71d3",
+      "amount": 800.0,
+      "type": "expense",
+      "category": "驾照",
+      "note": "",
+      "date": "2026-05-05T12:00:00",
+      "createdAt": "2026-05-05T12:00:00"
+    },
+    {
+      "id": "8ba15fe9-7d84-45e6-a15e-cdad49067285",
+      "amount": 90.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-03T12:00:00",
+      "createdAt": "2026-05-03T12:00:00"
+    },
+    {
+      "id": "8f34b295-72c1-4a9d-a05c-9405b021d276",
+      "amount": 43.58,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-03T12:00:00",
+      "createdAt": "2026-05-03T12:00:00"
+    },
+    {
+      "id": "a62c88b1-c159-44bb-a1d9-69b28aefbc26",
+      "amount": 30.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "",
+      "date": "2026-05-03T12:00:00",
+      "createdAt": "2026-05-03T12:00:00"
+    },
+    {
+      "id": "690ec51a-1465-45ba-923b-71aef9725df8",
+      "amount": 30.0,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-05-03T12:00:00",
+      "createdAt": "2026-05-03T12:00:00"
+    },
+    {
+      "id": "84892c1f-28be-48f2-bc04-eb6b2eaca6e5",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-05-03T12:00:00",
+      "createdAt": "2026-05-03T12:00:00"
+    },
+    {
+      "id": "bd33d4a8-8aad-48a9-b670-2de352da817c",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-30T12:00:00",
+      "createdAt": "2026-04-30T12:00:00"
+    },
+    {
+      "id": "47e7c6a1-f394-44ce-bad2-bbc022844c18",
+      "amount": 110.0,
+      "type": "expense",
+      "category": "驾照",
+      "note": "科目三报名",
+      "date": "2026-04-29T12:00:00",
+      "createdAt": "2026-04-29T12:00:00"
+    },
+    {
+      "id": "50452238-043b-4c32-891c-55bc486aa3a4",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-29T12:00:00",
+      "createdAt": "2026-04-29T12:00:00"
+    },
+    {
+      "id": "8f05aa9a-e968-40ce-b7fb-0ad2023c95e1",
+      "amount": 200.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-04-29T12:00:00",
+      "createdAt": "2026-04-29T12:00:00"
+    },
+    {
+      "id": "5148582d-b031-4c36-84b3-7fc7290bfd44",
+      "amount": 50.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "",
+      "date": "2026-04-29T12:00:00",
+      "createdAt": "2026-04-29T12:00:00"
+    },
+    {
+      "id": "ea486af8-f685-4b07-a688-9ea97f659b13",
+      "amount": 99.0,
+      "type": "expense",
+      "category": "ai",
+      "note": "",
+      "date": "2026-04-29T12:00:00",
+      "createdAt": "2026-04-29T12:00:00"
+    },
+    {
+      "id": "c4dfc665-a64e-4e3d-8d8d-9620870894a0",
+      "amount": 10.4,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-29T12:00:00",
+      "createdAt": "2026-04-29T12:00:00"
+    },
+    {
+      "id": "8ec8531e-da2b-4dd7-8995-d408f305f8cc",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-28T12:00:00",
+      "createdAt": "2026-04-28T12:00:00"
+    },
+    {
+      "id": "5a4daa04-af57-4ba9-93cf-3d3936d48eec",
+      "amount": 41.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-28T12:00:00",
+      "createdAt": "2026-04-28T12:00:00"
+    },
+    {
+      "id": "f6a35dbb-93ca-46cd-88e5-7686715c7f86",
+      "amount": 65.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-28T12:00:00",
+      "createdAt": "2026-04-28T12:00:00"
+    },
+    {
+      "id": "67e1fa72-69e9-4b00-b07b-bdc2e5b5b9e3",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-27T12:00:00",
+      "createdAt": "2026-04-27T12:00:00"
+    },
+    {
+      "id": "914c2c31-57a5-4637-ad21-10f02cbe8aae",
+      "amount": 24.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-27T12:00:00",
+      "createdAt": "2026-04-27T12:00:00"
+    },
+    {
+      "id": "bdbd26a2-c0bd-4f77-b64b-9fe750ad5805",
+      "amount": 108.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "kd加速器",
+      "date": "2026-04-26T12:00:00",
+      "createdAt": "2026-04-26T12:00:00"
+    },
+    {
+      "id": "86531425-ce00-4313-89b6-29b351e94a86",
+      "amount": 31.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-25T12:00:00",
+      "createdAt": "2026-04-25T12:00:00"
+    },
+    {
+      "id": "05aec830-d75e-4558-9837-beb612761207",
+      "amount": 25.79,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-25T12:00:00",
+      "createdAt": "2026-04-25T12:00:00"
+    },
+    {
+      "id": "45b3275b-06d4-46af-815a-9c01e9fb51a4",
+      "amount": 114.3,
+      "type": "expense",
+      "category": "卫生用品",
+      "note": "",
+      "date": "2026-04-23T12:00:00",
+      "createdAt": "2026-04-23T12:00:00"
+    },
+    {
+      "id": "c36df85e-9609-4ef7-84d9-a795d310c7ec",
+      "amount": 28.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-23T12:00:00",
+      "createdAt": "2026-04-23T12:00:00"
+    },
+    {
+      "id": "7683cdc5-6613-4c79-a149-14c4587e2a29",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-23T12:00:00",
+      "createdAt": "2026-04-23T12:00:00"
+    },
+    {
+      "id": "e7a443e8-781a-4fdb-b532-b42f96638fe3",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-22T12:00:00",
+      "createdAt": "2026-04-22T12:00:00"
+    },
+    {
+      "id": "7c89b0e0-f2f8-4874-ac45-d793ccdadf32",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-22T12:00:00",
+      "createdAt": "2026-04-22T12:00:00"
+    },
+    {
+      "id": "3b145145-69e3-472e-80b4-2e55a3cf2f54",
+      "amount": 18.88,
+      "type": "expense",
+      "category": "茶具",
+      "note": "",
+      "date": "2026-04-22T12:00:00",
+      "createdAt": "2026-04-22T12:00:00"
+    },
+    {
+      "id": "b81be37c-3f17-41c4-87ad-5d0bacc20d6d",
+      "amount": 238.0,
+      "type": "expense",
+      "category": "茶叶",
+      "note": "",
+      "date": "2026-04-22T12:00:00",
+      "createdAt": "2026-04-22T12:00:00"
+    },
+    {
+      "id": "bae3883c-1499-4a66-9da0-36b9f9f894d6",
+      "amount": 9.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-21T12:00:00",
+      "createdAt": "2026-04-21T12:00:00"
+    },
+    {
+      "id": "a489e60d-ab18-4c43-b080-364613dae04b",
+      "amount": 16.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-21T12:00:00",
+      "createdAt": "2026-04-21T12:00:00"
+    },
+    {
+      "id": "5b3e94fa-1e39-4193-90f3-85e3fc4e0a37",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-04-21T12:00:00",
+      "createdAt": "2026-04-21T12:00:00"
+    },
+    {
+      "id": "dbd723fa-5c27-45d4-af3d-b1932c8b21e3",
+      "amount": 22.98,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-19T12:00:00",
+      "createdAt": "2026-04-19T12:00:00"
+    },
+    {
+      "id": "a2f8dc28-db8b-47ec-b328-ea23ddf55eb2",
+      "amount": 800.0,
+      "type": "expense",
+      "category": "驾照",
+      "note": "科目二模拟",
+      "date": "2026-04-19T12:00:00",
+      "createdAt": "2026-04-19T12:00:00"
+    },
+    {
+      "id": "8d873e9f-1d95-4373-a4be-28437a86c1cb",
+      "amount": 36.2,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-18T12:00:00",
+      "createdAt": "2026-04-18T12:00:00"
+    },
+    {
+      "id": "92443ec8-2182-4613-b35b-f1feb78252ae",
+      "amount": 23.2,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-18T12:00:00",
+      "createdAt": "2026-04-18T12:00:00"
+    },
+    {
+      "id": "91ba9e77-c96c-4747-9fac-382b1e281b03",
+      "amount": 12.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-17T12:00:00",
+      "createdAt": "2026-04-17T12:00:00"
+    },
+    {
+      "id": "4eae6aa3-76b1-4bad-bb0d-2e7d1b51082f",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-04-17T12:00:00",
+      "createdAt": "2026-04-17T12:00:00"
+    },
+    {
+      "id": "d7c0a8a8-6808-4fb1-9ce0-d145b410cc77",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-16T12:00:00",
+      "createdAt": "2026-04-16T12:00:00"
+    },
+    {
+      "id": "afc9dbeb-1772-4d3d-8650-9da44160c366",
+      "amount": 260.0,
+      "type": "expense",
+      "category": "驾照",
+      "note": "科目二考试",
+      "date": "2026-04-16T12:00:00",
+      "createdAt": "2026-04-16T12:00:00"
+    },
+    {
+      "id": "69530a4a-1dbf-4a65-94f0-8b1aa1e270c8",
+      "amount": 594.77,
+      "type": "expense",
+      "category": "分期",
+      "note": "椅子",
+      "date": "2026-04-16T12:00:00",
+      "createdAt": "2026-04-16T12:00:00"
+    },
+    {
+      "id": "519b7ad4-50bb-4776-bb66-fc81afcf8d56",
+      "amount": 25.8,
+      "type": "expense",
+      "category": "书",
+      "note": "",
+      "date": "2026-04-15T12:00:00",
+      "createdAt": "2026-04-15T12:00:00"
+    },
+    {
+      "id": "3477b8da-1a08-4545-95d5-b8707cd953bd",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-15T12:00:00",
+      "createdAt": "2026-04-15T12:00:00"
+    },
+    {
+      "id": "46232980-45e2-4830-8a32-0866b5e18953",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-14T12:00:00",
+      "createdAt": "2026-04-14T12:00:00"
+    },
+    {
+      "id": "4a400d35-8e5d-4085-91e6-6798de1cfed8",
+      "amount": 99.98,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-04-14T12:00:00",
+      "createdAt": "2026-04-14T12:00:00"
+    },
+    {
+      "id": "f0a94580-1c9d-4fc5-9591-032997f6e704",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-13T12:00:00",
+      "createdAt": "2026-04-13T12:00:00"
+    },
+    {
+      "id": "e7866121-e650-4d1e-9d24-c1e09662d83c",
+      "amount": 3.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-13T12:00:00",
+      "createdAt": "2026-04-13T12:00:00"
+    },
+    {
+      "id": "e9084744-e9c4-44dc-be3a-c691708b42d6",
+      "amount": 21.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "i",
+      "date": "2026-04-13T12:00:00",
+      "createdAt": "2026-04-13T12:00:00"
+    },
+    {
+      "id": "3c58755c-5434-4442-9be5-4616eb17d2de",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-13T12:00:00",
+      "createdAt": "2026-04-13T12:00:00"
+    },
+    {
+      "id": "fcd743d7-85d2-4240-b845-8cb339243cff",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-13T12:00:00",
+      "createdAt": "2026-04-13T12:00:00"
+    },
+    {
+      "id": "55da2022-84f3-4759-9e00-8d0481c1ecb2",
+      "amount": 4.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-13T12:00:00",
+      "createdAt": "2026-04-13T12:00:00"
+    },
+    {
+      "id": "558d1109-0177-4b6e-b585-b8ee0596eb68",
+      "amount": 3.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-09T12:00:00",
+      "createdAt": "2026-04-09T12:00:00"
+    },
+    {
+      "id": "046f1f40-d0c6-4da1-8943-e2f52ee0dad6",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-09T12:00:00",
+      "createdAt": "2026-04-09T12:00:00"
+    },
+    {
+      "id": "72739e19-a956-48bb-af0d-6ea25a8e5b4f",
+      "amount": 40.0,
+      "type": "expense",
+      "category": "理发",
+      "note": "",
+      "date": "2026-04-09T12:00:00",
+      "createdAt": "2026-04-09T12:00:00"
+    },
+    {
+      "id": "05c09b2b-89a6-4236-9ffb-ce6f56cb25d8",
+      "amount": 20.2,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-09T12:00:00",
+      "createdAt": "2026-04-09T12:00:00"
+    },
+    {
+      "id": "4cad99b4-60ba-4894-a290-97c609560908",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "早午",
+      "date": "2026-04-08T12:00:00",
+      "createdAt": "2026-04-08T12:00:00"
+    },
+    {
+      "id": "f8a6543e-d355-4ec8-96cc-c81e4c383118",
+      "amount": 29.3,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-08T12:00:00",
+      "createdAt": "2026-04-08T12:00:00"
+    },
+    {
+      "id": "0ba85d28-e691-42e3-aa06-516b6c0075f8",
+      "amount": 26.03,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-08T12:00:00",
+      "createdAt": "2026-04-08T12:00:00"
+    },
+    {
+      "id": "d6492ff3-1458-49da-a2c0-9f2098ccb52c",
+      "amount": 30.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "",
+      "date": "2026-04-06T12:00:00",
+      "createdAt": "2026-04-06T12:00:00"
+    },
+    {
+      "id": "cf589e4d-55bf-4a3a-a18b-2eeac7cbe7e6",
+      "amount": 37.4,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-06T12:00:00",
+      "createdAt": "2026-04-06T12:00:00"
+    },
+    {
+      "id": "343a393e-79c6-4032-8287-aada2167397c",
+      "amount": 39.3,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-06T12:00:00",
+      "createdAt": "2026-04-06T12:00:00"
+    },
+    {
+      "id": "971cec57-9045-406a-863d-0d5e54d82e76",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-03T12:00:00",
+      "createdAt": "2026-04-03T12:00:00"
+    },
+    {
+      "id": "8556c6fb-9237-4510-a03f-39ac19cc88bd",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "早午",
+      "date": "2026-04-02T12:00:00",
+      "createdAt": "2026-04-02T12:00:00"
+    },
+    {
+      "id": "ba86a1e2-2bf1-471e-8250-a2ae5c3e276c",
+      "amount": 24.0,
+      "type": "expense",
+      "category": "氪金",
+      "note": "皮肤",
+      "date": "2026-04-02T12:00:00",
+      "createdAt": "2026-04-02T12:00:00"
+    },
+    {
+      "id": "8c876d84-b292-41e3-9b60-07866002d5f6",
+      "amount": 4.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-04-01T12:00:00",
+      "createdAt": "2026-04-01T12:00:00"
+    },
+    {
+      "id": "f9f78466-c920-47e9-b888-15f431a318a5",
+      "amount": 13.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "早午",
+      "date": "2026-03-31T12:00:00",
+      "createdAt": "2026-03-31T12:00:00"
+    },
+    {
+      "id": "ba58f304-4162-44f9-9725-53d73eaaed74",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "早午",
+      "date": "2026-03-30T12:00:00",
+      "createdAt": "2026-03-30T12:00:00"
+    },
+    {
+      "id": "3b4ef665-d208-4783-bbd2-7b1858120354",
+      "amount": 99.0,
+      "type": "expense",
+      "category": "AI",
+      "note": "",
+      "date": "2026-03-30T12:00:00",
+      "createdAt": "2026-03-30T12:00:00"
+    },
+    {
+      "id": "62db0d41-92f9-4750-bd89-6f508cc5a1c0",
+      "amount": 81.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-30T12:00:00",
+      "createdAt": "2026-03-30T12:00:00"
+    },
+    {
+      "id": "641ea0f5-e12a-41e7-ab71-2a1b691fd84c",
+      "amount": 88.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "狒狒",
+      "date": "2026-03-30T12:00:00",
+      "createdAt": "2026-03-30T12:00:00"
+    },
+    {
+      "id": "d717c779-b507-4419-b2fa-7a5be4e5d2ab",
+      "amount": 16.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-30T12:00:00",
+      "createdAt": "2026-03-30T12:00:00"
+    },
+    {
+      "id": "aeba905f-9cfc-42c9-a38e-2c9c62a49406",
+      "amount": 26.2,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-30T12:00:00",
+      "createdAt": "2026-03-30T12:00:00"
+    },
+    {
+      "id": "dbbd69b8-e87a-42f2-b253-8bed88938d2f",
+      "amount": 8.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "早午",
+      "date": "2026-03-27T12:00:00",
+      "createdAt": "2026-03-27T12:00:00"
+    },
+    {
+      "id": "5af956da-7358-4dd1-9c51-6f5652d745c5",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "早午",
+      "date": "2026-03-26T12:00:00",
+      "createdAt": "2026-03-26T12:00:00"
+    },
+    {
+      "id": "efb348d6-6325-4753-9970-3f99a629d9de",
+      "amount": 41.99,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-26T12:00:00",
+      "createdAt": "2026-03-26T12:00:00"
+    },
+    {
+      "id": "842d4557-122e-47cf-ae9d-4543c0833a4c",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-25T12:00:00",
+      "createdAt": "2026-03-25T12:00:00"
+    },
+    {
+      "id": "8e2c5aaf-5b92-4aae-8db8-11a4de503df2",
+      "amount": 29.2,
+      "type": "expense",
+      "category": "零食",
+      "note": "鸡脚筋",
+      "date": "2026-03-25T12:00:00",
+      "createdAt": "2026-03-25T12:00:00"
+    },
+    {
+      "id": "e7e9d6c0-9e18-4b68-8db9-80e83164719f",
+      "amount": 12.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-24T12:00:00",
+      "createdAt": "2026-03-24T12:00:00"
+    },
+    {
+      "id": "c05d156a-74ba-42cc-9d20-278896ecf430",
+      "amount": 13.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "早午",
+      "date": "2026-03-23T12:00:00",
+      "createdAt": "2026-03-23T12:00:00"
+    },
+    {
+      "id": "0e0dab2e-5124-48c3-8f05-85a4dcddd378",
+      "amount": 22.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-22T12:00:00",
+      "createdAt": "2026-03-22T12:00:00"
+    },
+    {
+      "id": "e8afaa31-cd7e-4835-ade0-26698f4c1f9f",
+      "amount": 11.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "早午",
+      "date": "2026-03-20T12:00:00",
+      "createdAt": "2026-03-20T12:00:00"
+    },
+    {
+      "id": "720142ed-e011-49d5-8f92-3bbc5df083a2",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-19T12:00:00",
+      "createdAt": "2026-03-19T12:00:00"
+    },
+    {
+      "id": "6d815c49-333e-47a0-8305-1c7fc6a641c3",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-19T12:00:00",
+      "createdAt": "2026-03-19T12:00:00"
+    },
+    {
+      "id": "183d0439-4d86-405f-b634-f732279c00b7",
+      "amount": 259.0,
+      "type": "expense",
+      "category": "茶叶",
+      "note": "",
+      "date": "2026-03-19T12:00:00",
+      "createdAt": "2026-03-19T12:00:00"
+    },
+    {
+      "id": "6ef456d3-0e66-48e5-9f2c-20f8ce33dab6",
+      "amount": 158.0,
+      "type": "expense",
+      "category": "年卡",
+      "note": "qqsvip",
+      "date": "2026-03-18T12:00:00",
+      "createdAt": "2026-03-18T12:00:00"
+    },
+    {
+      "id": "aa6d9f8f-c698-4cd2-8ee3-b957996f02c9",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-18T12:00:00",
+      "createdAt": "2026-03-18T12:00:00"
+    },
+    {
+      "id": "da4d017c-6186-43a1-a570-8349eea3640a",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-17T12:00:00",
+      "createdAt": "2026-03-17T12:00:00"
+    },
+    {
+      "id": "5a252d6d-0a92-4676-86b4-8764ee70070d",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-17T12:00:00",
+      "createdAt": "2026-03-17T12:00:00"
+    },
+    {
+      "id": "c23df128-169c-4ce9-bcdf-555af21f4154",
+      "amount": 195.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-03-17T12:00:00",
+      "createdAt": "2026-03-17T12:00:00"
+    },
+    {
+      "id": "0f41dd5a-4d39-4bc6-9925-d9a4b7c16cba",
+      "amount": 1352.07,
+      "type": "expense",
+      "category": "分期",
+      "note": "触摸板+椅子",
+      "date": "2026-03-16T12:00:00",
+      "createdAt": "2026-03-16T12:00:00"
+    },
+    {
+      "id": "aa53e023-55b9-4498-a96e-93b476f7623d",
+      "amount": 18.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-15T12:00:00",
+      "createdAt": "2026-03-15T12:00:00"
+    },
+    {
+      "id": "c5a14e7c-d51f-46ee-944a-75990b4d7889",
+      "amount": 46.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-15T12:00:00",
+      "createdAt": "2026-03-15T12:00:00"
+    },
+    {
+      "id": "12a10aad-8252-4294-bd79-f9edba4b55f5",
+      "amount": 21.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "icloud",
+      "date": "2026-03-15T12:00:00",
+      "createdAt": "2026-03-15T12:00:00"
+    },
+    {
+      "id": "65049982-ac32-444d-aefb-508de6c0ed28",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-13T12:00:00",
+      "createdAt": "2026-03-13T12:00:00"
+    },
+    {
+      "id": "8cb78154-ae5b-49e9-b5c2-30e77f738e19",
+      "amount": 6.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-12T12:00:00",
+      "createdAt": "2026-03-12T12:00:00"
+    },
+    {
+      "id": "61d670f6-f442-4eb9-9efd-67caedb3e4cd",
+      "amount": 5.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-12T12:00:00",
+      "createdAt": "2026-03-12T12:00:00"
+    },
+    {
+      "id": "9fd5d358-ab5a-4544-9ee7-a0487b9412eb",
+      "amount": 6.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-11T12:00:00",
+      "createdAt": "2026-03-11T12:00:00"
+    },
+    {
+      "id": "0cd6e847-5642-4039-b491-422627c4ecef",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-10T12:00:00",
+      "createdAt": "2026-03-10T12:00:00"
+    },
+    {
+      "id": "5455874e-8973-429b-b807-79c09ffa6c02",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-09T12:00:00",
+      "createdAt": "2026-03-09T12:00:00"
+    },
+    {
+      "id": "10daace1-6743-466e-b7c2-7ef7ed964647",
+      "amount": 30.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "粥",
+      "date": "2026-03-08T12:00:00",
+      "createdAt": "2026-03-08T12:00:00"
+    },
+    {
+      "id": "2dc01658-46b9-4307-a75f-715e3f25b438",
+      "amount": 17.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-08T12:00:00",
+      "createdAt": "2026-03-08T12:00:00"
+    },
+    {
+      "id": "8533a401-a39f-4512-8241-b75a7aaaf112",
+      "amount": 11.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-08T12:00:00",
+      "createdAt": "2026-03-08T12:00:00"
+    },
+    {
+      "id": "e3b7bf43-5022-4782-a8db-f3001e9c0714",
+      "amount": 32.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-08T12:00:00",
+      "createdAt": "2026-03-08T12:00:00"
+    },
+    {
+      "id": "3195a050-7c9a-4c43-9960-7f9c65bef645",
+      "amount": 86.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-08T12:00:00",
+      "createdAt": "2026-03-08T12:00:00"
+    },
+    {
+      "id": "28a70a48-0edb-49ac-9916-0e1c57b29736",
+      "amount": 22.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-07T12:00:00",
+      "createdAt": "2026-03-07T12:00:00"
+    },
+    {
+      "id": "f3b30fca-ab6e-477b-b668-63b650fce340",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-05T12:00:00",
+      "createdAt": "2026-03-05T12:00:00"
+    },
+    {
+      "id": "8872eba5-472c-41e8-877b-5e2e88abf21e",
+      "amount": 36.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-05T12:00:00",
+      "createdAt": "2026-03-05T12:00:00"
+    },
+    {
+      "id": "0c5c8591-3b7d-4538-a447-5d9c284d24ba",
+      "amount": 9.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-04T12:00:00",
+      "createdAt": "2026-03-04T12:00:00"
+    },
+    {
+      "id": "7d3644d6-4c43-4bdd-bb8a-3c4088190a36",
+      "amount": 9.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-03T12:00:00",
+      "createdAt": "2026-03-03T12:00:00"
+    },
+    {
+      "id": "e0f346bc-bc5e-434d-ac3a-8fe7a845c2d1",
+      "amount": 26.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-03T12:00:00",
+      "createdAt": "2026-03-03T12:00:00"
+    },
+    {
+      "id": "2e56b822-8277-422b-ac59-597c36a851be",
+      "amount": 9.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-02T12:00:00",
+      "createdAt": "2026-03-02T12:00:00"
+    },
+    {
+      "id": "70875c3d-31be-4b99-929d-952386b5d4fe",
+      "amount": 4.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-03-02T12:00:00",
+      "createdAt": "2026-03-02T12:00:00"
+    },
+    {
+      "id": "b9733fe3-e9aa-4928-8ff6-60f86fc1ae20",
+      "amount": 154.0,
+      "type": "expense",
+      "category": "茶具",
+      "note": "壶4件套",
+      "date": "2026-03-01T12:00:00",
+      "createdAt": "2026-03-01T12:00:00"
+    },
+    {
+      "id": "f6618a5e-a4e1-4476-b672-a48d1fc008e2",
+      "amount": 23.7,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-28T12:00:00",
+      "createdAt": "2026-02-28T12:00:00"
+    },
+    {
+      "id": "757505cc-1b96-448d-8021-aab77f6d4f6e",
+      "amount": 13.2,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-28T12:00:00",
+      "createdAt": "2026-02-28T12:00:00"
+    },
+    {
+      "id": "72988f6b-8045-4cfa-bc77-9da80fa33aab",
+      "amount": 49.0,
+      "type": "expense",
+      "category": "AI",
+      "note": "",
+      "date": "2026-02-28T12:00:00",
+      "createdAt": "2026-02-28T12:00:00"
+    },
+    {
+      "id": "ac504d3d-c0f3-498e-862a-65619bb89a96",
+      "amount": 14.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-27T12:00:00",
+      "createdAt": "2026-02-27T12:00:00"
+    },
+    {
+      "id": "9f85ba9b-d419-432c-81c6-336309b53f79",
+      "amount": 4.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-26T12:00:00",
+      "createdAt": "2026-02-26T12:00:00"
+    },
+    {
+      "id": "e555b8e5-f1a1-4236-bab8-ee4e0cec76c1",
+      "amount": 33.6,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-26T12:00:00",
+      "createdAt": "2026-02-26T12:00:00"
+    },
+    {
+      "id": "547dc12b-6ae8-4e70-96c6-dce667dcef8c",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-25T12:00:00",
+      "createdAt": "2026-02-25T12:00:00"
+    },
+    {
+      "id": "c71ee0f1-e54f-4efe-a5ca-448931e19f23",
+      "amount": 3.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-24T12:00:00",
+      "createdAt": "2026-02-24T12:00:00"
+    },
+    {
+      "id": "13700665-04ee-4e32-9c52-cbdfa5f49f21",
+      "amount": 20.7,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-22T12:00:00",
+      "createdAt": "2026-02-22T12:00:00"
+    },
+    {
+      "id": "aaa84254-0ad3-497c-96c1-d6fe404c1ea7",
+      "amount": 41.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-22T12:00:00",
+      "createdAt": "2026-02-22T12:00:00"
+    },
+    {
+      "id": "9bf7f95a-3d34-4bd9-aa21-10acf458b8c9",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-02-22T12:00:00",
+      "createdAt": "2026-02-22T12:00:00"
+    },
+    {
+      "id": "3be357f6-28e1-4db3-a6bf-7ec2e551ce1d",
+      "amount": 200.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-02-19T12:00:00",
+      "createdAt": "2026-02-19T12:00:00"
+    },
+    {
+      "id": "32f3da50-9a8e-4567-ba9c-7ddd7bdedc79",
+      "amount": 260.7,
+      "type": "expense",
+      "category": "周边",
+      "note": "一堆泡泡",
+      "date": "2026-02-18T12:00:00",
+      "createdAt": "2026-02-18T12:00:00"
+    },
+    {
+      "id": "a77fb1ba-9c8f-4062-976f-324a113c25f2",
+      "amount": 3.0,
+      "type": "expense",
+      "category": "周边",
+      "note": "qq气泡",
+      "date": "2026-02-18T12:00:00",
+      "createdAt": "2026-02-18T12:00:00"
+    },
+    {
+      "id": "5fa252c3-00be-4da4-a23f-9b7a86de2ded",
+      "amount": 26.0,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-02-15T12:00:00",
+      "createdAt": "2026-02-15T12:00:00"
+    },
+    {
+      "id": "2869a7ce-adba-47f8-b590-d0adfa451889",
+      "amount": 68.6,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-15T12:00:00",
+      "createdAt": "2026-02-15T12:00:00"
+    },
+    {
+      "id": "4ac1ae8e-1561-43bf-b035-ba7b0fc994de",
+      "amount": 50.0,
+      "type": "expense",
+      "category": "氪金",
+      "note": "14改名",
+      "date": "2026-02-15T12:00:00",
+      "createdAt": "2026-02-15T12:00:00"
+    },
+    {
+      "id": "4edd4b6e-125d-4c10-b89d-3629672217a5",
+      "amount": 3.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-13T12:00:00",
+      "createdAt": "2026-02-13T12:00:00"
+    },
+    {
+      "id": "848bba76-328c-40b9-bae6-075f5b1687a0",
+      "amount": 21.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "icloud",
+      "date": "2026-02-13T12:00:00",
+      "createdAt": "2026-02-13T12:00:00"
+    },
+    {
+      "id": "bcf7b862-fbd3-495d-804d-b62fdd8f5d82",
+      "amount": 18.68,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-13T12:00:00",
+      "createdAt": "2026-02-13T12:00:00"
+    },
+    {
+      "id": "45dec518-ec54-4504-a92b-8160431512e0",
+      "amount": 26.7,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-13T12:00:00",
+      "createdAt": "2026-02-13T12:00:00"
+    },
+    {
+      "id": "5171445a-2c8d-4884-86ec-db9f676c66f6",
+      "amount": 198.0,
+      "type": "expense",
+      "category": "氪金",
+      "note": "粥",
+      "date": "2026-02-12T12:00:00",
+      "createdAt": "2026-02-12T12:00:00"
+    },
+    {
+      "id": "45a03349-5f33-4463-8254-86b14d4eb778",
+      "amount": 328.0,
+      "type": "expense",
+      "category": "氪金",
+      "note": "粥",
+      "date": "2026-02-12T12:00:00",
+      "createdAt": "2026-02-12T12:00:00"
+    },
+    {
+      "id": "06f2a67c-ddc3-45e6-b3fb-136d330063d9",
+      "amount": 50.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-02-12T12:00:00",
+      "createdAt": "2026-02-12T12:00:00"
+    },
+    {
+      "id": "f45ca054-6f78-4806-a5dc-e1abc1029af1",
+      "amount": 50.0,
+      "type": "expense",
+      "category": "理发",
+      "note": "",
+      "date": "2026-02-12T12:00:00",
+      "createdAt": "2026-02-12T12:00:00"
+    },
+    {
+      "id": "ed6935bf-53af-44b7-9ee2-fa4a59d2817e",
+      "amount": 7.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-12T12:00:00",
+      "createdAt": "2026-02-12T12:00:00"
+    },
+    {
+      "id": "d0435db0-84c1-42f2-9174-d09dc585f3c6",
+      "amount": 46.4,
+      "type": "expense",
+      "category": "游戏",
+      "note": "",
+      "date": "2026-02-12T12:00:00",
+      "createdAt": "2026-02-12T12:00:00"
+    },
+    {
+      "id": "136ca0bb-00da-4a7e-acdd-b6c9af9a0518",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-12T12:00:00",
+      "createdAt": "2026-02-12T12:00:00"
+    },
+    {
+      "id": "c0e1c55e-5312-43c2-b6cb-6cde29c7f546",
+      "amount": 40.4,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-10T12:00:00",
+      "createdAt": "2026-02-10T12:00:00"
+    },
+    {
+      "id": "d6478393-25b2-4596-a026-0d418681b0c0",
+      "amount": 13.52,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-02-10T12:00:00",
+      "createdAt": "2026-02-10T12:00:00"
+    },
+    {
+      "id": "c6fbfaf6-56ca-4562-8334-d62e080b6ca1",
+      "amount": 55.33,
+      "type": "expense",
+      "category": "茶具",
+      "note": "盖碗+公道杯",
+      "date": "2026-02-09T12:00:00",
+      "createdAt": "2026-02-09T12:00:00"
+    },
+    {
+      "id": "844bab6e-0898-4493-9f19-c03d4451f4e9",
+      "amount": 35.12,
+      "type": "expense",
+      "category": "茶具",
+      "note": "茶席",
+      "date": "2026-02-09T12:00:00",
+      "createdAt": "2026-02-09T12:00:00"
+    },
+    {
+      "id": "692fb246-e7ce-408a-9c58-10832a877bbe",
+      "amount": 19.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-09T12:00:00",
+      "createdAt": "2026-02-09T12:00:00"
+    },
+    {
+      "id": "cdcd31ad-72c5-4ff8-a42f-e95024cfef74",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-06T12:00:00",
+      "createdAt": "2026-02-06T12:00:00"
+    },
+    {
+      "id": "cf029c23-3dec-4629-9b7b-656313ebb285",
+      "amount": 45.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-02-06T12:00:00",
+      "createdAt": "2026-02-06T12:00:00"
+    },
+    {
+      "id": "cb5d1557-fe24-419c-a009-e78bb7a2672e",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-02-06T12:00:00",
+      "createdAt": "2026-02-06T12:00:00"
+    },
+    {
+      "id": "0481c6b2-b136-43b9-ad8c-d6c5f8906490",
+      "amount": 4.9,
+      "type": "expense",
+      "category": "AI",
+      "note": "",
+      "date": "2026-02-06T12:00:00",
+      "createdAt": "2026-02-06T12:00:00"
+    },
+    {
+      "id": "8243de84-5266-40be-b947-86c5fd6a7702",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-05T12:00:00",
+      "createdAt": "2026-02-05T12:00:00"
+    },
+    {
+      "id": "cfb96c38-510c-46ff-a949-0a02e53c6a06",
+      "amount": 30.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "粥",
+      "date": "2026-02-05T12:00:00",
+      "createdAt": "2026-02-05T12:00:00"
+    },
+    {
+      "id": "fe7b624f-e78d-4f6c-a2ff-18c8448b147f",
+      "amount": 40.0,
+      "type": "expense",
+      "category": "日用品",
+      "note": "漱口水",
+      "date": "2026-02-05T12:00:00",
+      "createdAt": "2026-02-05T12:00:00"
+    },
+    {
+      "id": "f41da01a-5c34-4ca3-8ff1-c0e429eccfb0",
+      "amount": 650.0,
+      "type": "expense",
+      "category": "茶叶",
+      "note": "",
+      "date": "2026-02-05T12:00:00",
+      "createdAt": "2026-02-05T12:00:00"
+    },
+    {
+      "id": "c72f8ac2-2671-4ac9-8ad2-fb96e9225d46",
+      "amount": 7.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-04T12:00:00",
+      "createdAt": "2026-02-04T12:00:00"
+    },
+    {
+      "id": "22f8a614-e104-4b47-a6f4-bc72cf700742",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-04T12:00:00",
+      "createdAt": "2026-02-04T12:00:00"
+    },
+    {
+      "id": "fe5e7c15-8ba3-43a3-85cc-6372af8aaaad",
+      "amount": 25.3,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-04T12:00:00",
+      "createdAt": "2026-02-04T12:00:00"
+    },
+    {
+      "id": "3aebc3bd-28dc-43d8-ab95-241532b269bb",
+      "amount": 57.14,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-03T12:00:00",
+      "createdAt": "2026-02-03T12:00:00"
+    },
+    {
+      "id": "089d3c72-1915-4f62-9eee-ed40a63a89a1",
+      "amount": 182.6,
+      "type": "expense",
+      "category": "卫生用品",
+      "note": "",
+      "date": "2026-02-02T12:00:00",
+      "createdAt": "2026-02-02T12:00:00"
+    },
+    {
+      "id": "968666fa-3ebb-4515-8a3b-c652a344d3ae",
+      "amount": 45.7,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-02-02T12:00:00",
+      "createdAt": "2026-02-02T12:00:00"
+    },
+    {
+      "id": "254eabef-d421-43bf-824e-3e9eb50ec8f1",
+      "amount": 27.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-31T12:00:00",
+      "createdAt": "2026-01-31T12:00:00"
+    },
+    {
+      "id": "f29447c4-ab86-4395-bb04-af18e04c505c",
+      "amount": 36.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-31T12:00:00",
+      "createdAt": "2026-01-31T12:00:00"
+    },
+    {
+      "id": "5ae16cdb-5b9b-4167-9021-39be6cd67708",
+      "amount": 50.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-01-30T12:00:00",
+      "createdAt": "2026-01-30T12:00:00"
+    },
+    {
+      "id": "0c02440e-41cd-471f-99da-4e012010567f",
+      "amount": 4.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-29T12:00:00",
+      "createdAt": "2026-01-29T12:00:00"
+    },
+    {
+      "id": "063cd006-625c-4b53-ac70-e8c31b3ecf32",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-29T12:00:00",
+      "createdAt": "2026-01-29T12:00:00"
+    },
+    {
+      "id": "70424caf-730a-43bf-8a9b-9de5e1760274",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-29T12:00:00",
+      "createdAt": "2026-01-29T12:00:00"
+    },
+    {
+      "id": "0081e65b-9678-4667-8771-83f863067e18",
+      "amount": 19.08,
+      "type": "expense",
+      "category": "梯子",
+      "note": "星云，月付备用",
+      "date": "2026-01-29T12:00:00",
+      "createdAt": "2026-01-29T12:00:00"
+    },
+    {
+      "id": "5c80b7ad-a5be-4b43-b22a-37bf17c9cb29",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-28T12:00:00",
+      "createdAt": "2026-01-28T12:00:00"
+    },
+    {
+      "id": "3ecf7865-962e-422a-86c0-06073d2314fc",
+      "amount": 80.0,
+      "type": "expense",
+      "category": "数码",
+      "note": "电视支架",
+      "date": "2026-01-28T12:00:00",
+      "createdAt": "2026-01-28T12:00:00"
+    },
+    {
+      "id": "511e1301-c90c-48f8-bb67-89dcafda9371",
+      "amount": 142.0,
+      "type": "expense",
+      "category": "数码",
+      "note": "键盘托",
+      "date": "2026-01-28T12:00:00",
+      "createdAt": "2026-01-28T12:00:00"
+    },
+    {
+      "id": "6a54e507-7477-428a-bd53-1801f37e92eb",
+      "amount": 17.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-27T12:00:00",
+      "createdAt": "2026-01-27T12:00:00"
+    },
+    {
+      "id": "962b04d5-eb3e-4e3b-9881-e03fdd15aceb",
+      "amount": 10.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-26T12:00:00",
+      "createdAt": "2026-01-26T12:00:00"
+    },
+    {
+      "id": "670a48e4-dcc0-41bf-b75f-ad7c21c6c4e7",
+      "amount": 12.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-26T12:00:00",
+      "createdAt": "2026-01-26T12:00:00"
+    },
+    {
+      "id": "48633ea1-a343-42ac-bd4a-b9c929ed6400",
+      "amount": 88.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "14",
+      "date": "2026-01-26T12:00:00",
+      "createdAt": "2026-01-26T12:00:00"
+    },
+    {
+      "id": "93210691-ac4a-4360-b9b9-946571a1faa0",
+      "amount": 12.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-25T12:00:00",
+      "createdAt": "2026-01-25T12:00:00"
+    },
+    {
+      "id": "18940c3d-a39f-47b1-afd6-33bd1897e6b0",
+      "amount": 34.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-24T12:00:00",
+      "createdAt": "2026-01-24T12:00:00"
+    },
+    {
+      "id": "58bd77ee-6aa6-4018-a3fb-79514b271ba2",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-23T12:00:00",
+      "createdAt": "2026-01-23T12:00:00"
+    },
+    {
+      "id": "57503794-c9bd-4f7e-b29b-f21d197b01ef",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-23T12:00:00",
+      "createdAt": "2026-01-23T12:00:00"
+    },
+    {
+      "id": "8b82255b-00e7-450c-8d2a-a1452599e122",
+      "amount": 12.89,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-23T12:00:00",
+      "createdAt": "2026-01-23T12:00:00"
+    },
+    {
+      "id": "f0488412-d3c5-42b6-b42b-0c790a85d938",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-22T12:00:00",
+      "createdAt": "2026-01-22T12:00:00"
+    },
+    {
+      "id": "7cd42ea0-0a36-4477-95fb-853562004813",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-22T12:00:00",
+      "createdAt": "2026-01-22T12:00:00"
+    },
+    {
+      "id": "d9e30c39-fc69-4913-8148-9e55fe052bb4",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-21T12:00:00",
+      "createdAt": "2026-01-21T12:00:00"
+    },
+    {
+      "id": "fcab94d1-53a0-4e6f-8fc3-aa0ec3bc5bf7",
+      "amount": 22.4,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-21T12:00:00",
+      "createdAt": "2026-01-21T12:00:00"
+    },
+    {
+      "id": "9161e8f0-99b8-49b2-b194-8df43b7e347e",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-21T12:00:00",
+      "createdAt": "2026-01-21T12:00:00"
+    },
+    {
+      "id": "10453aad-9027-4495-829c-0e8d267f357c",
+      "amount": 3.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-20T12:00:00",
+      "createdAt": "2026-01-20T12:00:00"
+    },
+    {
+      "id": "05708922-8807-46fd-893f-19becf368577",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-19T12:00:00",
+      "createdAt": "2026-01-19T12:00:00"
+    },
+    {
+      "id": "fc73c19f-1c51-4735-8337-b9d687b13a79",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-16T12:00:00",
+      "createdAt": "2026-01-16T12:00:00"
+    },
+    {
+      "id": "70468c75-7ccd-4e6b-a3df-92a726f97be2",
+      "amount": 88.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-01-16T12:00:00",
+      "createdAt": "2026-01-16T12:00:00"
+    },
+    {
+      "id": "4548f309-2691-4569-bdf2-50f178faf1ec",
+      "amount": 48.0,
+      "type": "expense",
+      "category": "游戏",
+      "note": "14发型",
+      "date": "2026-01-16T12:00:00",
+      "createdAt": "2026-01-16T12:00:00"
+    },
+    {
+      "id": "f05f7ff6-0565-4448-90e5-c72670f41068",
+      "amount": 32.8,
+      "type": "expense",
+      "category": "零食",
+      "note": "",
+      "date": "2026-01-16T12:00:00",
+      "createdAt": "2026-01-16T12:00:00"
+    },
+    {
+      "id": "bf582a04-7321-484e-8e0a-a0190e8195da",
+      "amount": 10.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-15T12:00:00",
+      "createdAt": "2026-01-15T12:00:00"
+    },
+    {
+      "id": "e162e2bc-67da-4960-9afd-30b9f9ef2c7e",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-15T12:00:00",
+      "createdAt": "2026-01-15T12:00:00"
+    },
+    {
+      "id": "8c011677-9bc1-4eb0-8d23-7e17c16fa07c",
+      "amount": 94.19,
+      "type": "expense",
+      "category": "周边",
+      "note": "令泡泡",
+      "date": "2026-01-15T12:00:00",
+      "createdAt": "2026-01-15T12:00:00"
+    },
+    {
+      "id": "761535ed-b459-472c-aab9-35468764f126",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-15T12:00:00",
+      "createdAt": "2026-01-15T12:00:00"
+    },
+    {
+      "id": "8ea1b899-98d5-441b-b1e3-a4eb59cc443e",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-14T12:00:00",
+      "createdAt": "2026-01-14T12:00:00"
+    },
+    {
+      "id": "56647aa2-7036-44d6-a208-ef7fdfed44d9",
+      "amount": 15.93,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-14T12:00:00",
+      "createdAt": "2026-01-14T12:00:00"
+    },
+    {
+      "id": "e501bebb-2e2c-4594-a79f-26c0cdbdb263",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-13T12:00:00",
+      "createdAt": "2026-01-13T12:00:00"
+    },
+    {
+      "id": "5762c53c-df9e-4e5c-adc6-41b8d7f42ad5",
+      "amount": 2.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-13T12:00:00",
+      "createdAt": "2026-01-13T12:00:00"
+    },
+    {
+      "id": "df04f6e6-eda2-45b2-afeb-54def7147582",
+      "amount": 21.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "icloud",
+      "date": "2026-01-13T12:00:00",
+      "createdAt": "2026-01-13T12:00:00"
+    },
+    {
+      "id": "ee946ec2-60ea-416f-bc7c-3114d472714d",
+      "amount": 9.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-12T12:00:00",
+      "createdAt": "2026-01-12T12:00:00"
+    },
+    {
+      "id": "4b5166b4-a530-4929-a38c-39e4993c813e",
+      "amount": 3.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-12T12:00:00",
+      "createdAt": "2026-01-12T12:00:00"
+    },
+    {
+      "id": "e1b811ec-fea0-4832-b57b-81ef0896b472",
+      "amount": 15.35,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-12T12:00:00",
+      "createdAt": "2026-01-12T12:00:00"
+    },
+    {
+      "id": "1e481617-bc92-40b5-9346-37203785794f",
+      "amount": 15.83,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2026-01-11T12:00:00",
+      "createdAt": "2026-01-11T12:00:00"
+    },
+    {
+      "id": "b4ba2186-4399-466b-b441-0b6942307ecf",
+      "amount": 13.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-10T12:00:00",
+      "createdAt": "2026-01-10T12:00:00"
+    },
+    {
+      "id": "823eae83-757b-4925-885c-f08d12a0aff9",
+      "amount": 34.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-10T12:00:00",
+      "createdAt": "2026-01-10T12:00:00"
+    },
+    {
+      "id": "15df9ed9-ea39-4b77-9f14-3d10ac06fd84",
+      "amount": 4.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-09T12:00:00",
+      "createdAt": "2026-01-09T12:00:00"
+    },
+    {
+      "id": "0cf50056-fa98-4ebf-940e-da73afb35605",
+      "amount": 50.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2026-01-09T12:00:00",
+      "createdAt": "2026-01-09T12:00:00"
+    },
+    {
+      "id": "d6a5d725-4bcf-4c0c-bb0b-d943c878490e",
+      "amount": 17.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-09T12:00:00",
+      "createdAt": "2026-01-09T12:00:00"
+    },
+    {
+      "id": "5dd8a694-0c2d-4e50-a66b-e729cbf5a441",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-08T12:00:00",
+      "createdAt": "2026-01-08T12:00:00"
+    },
+    {
+      "id": "1ae7ecda-08b8-433a-88e3-ff6af6566413",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-07T12:00:00",
+      "createdAt": "2026-01-07T12:00:00"
+    },
+    {
+      "id": "e7c90e27-cd3c-465d-be36-810d85064712",
+      "amount": 30.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "鹰角",
+      "date": "2026-01-06T12:00:00",
+      "createdAt": "2026-01-06T12:00:00"
+    },
+    {
+      "id": "a51377a4-2b84-4691-907d-751a8ea7d03a",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-05T12:00:00",
+      "createdAt": "2026-01-05T12:00:00"
+    },
+    {
+      "id": "62976e19-143a-4e58-a0e7-db828a40ac0f",
+      "amount": 5.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-04T12:00:00",
+      "createdAt": "2026-01-04T12:00:00"
+    },
+    {
+      "id": "202e8177-dae0-4537-bb10-75eb65d3c38a",
+      "amount": 29.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-03T12:00:00",
+      "createdAt": "2026-01-03T12:00:00"
+    },
+    {
+      "id": "aa4acfbd-2ea5-4bed-b429-de81fd9317d8",
+      "amount": 21.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2026-01-02T12:00:00",
+      "createdAt": "2026-01-02T12:00:00"
+    },
+    {
+      "id": "1212be41-bed6-424e-80c6-743afe16bba7",
+      "amount": 108.93,
+      "type": "expense",
+      "category": "保健品",
+      "note": "奶蓟草片",
+      "date": "2026-01-01T12:00:00",
+      "createdAt": "2026-01-01T12:00:00"
+    },
+    {
+      "id": "839f464b-b209-4844-9492-98872f69704f",
+      "amount": 56.71,
+      "type": "expense",
+      "category": "保健品",
+      "note": "草茶",
+      "date": "2026-01-01T12:00:00",
+      "createdAt": "2026-01-01T12:00:00"
+    },
+    {
+      "id": "bffe222c-27d2-42a4-8e72-a077127cd4f1",
+      "amount": 4.5,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-31T12:00:00",
+      "createdAt": "2025-12-31T12:00:00"
+    },
+    {
+      "id": "57aaf210-9b13-4187-a00f-9f1decd58396",
+      "amount": 116.59,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "火锅",
+      "date": "2025-12-27T12:00:00",
+      "createdAt": "2025-12-27T12:00:00"
+    },
+    {
+      "id": "6cf13df6-6ff5-4a8f-911c-2cc00e446140",
+      "amount": 8.9,
+      "type": "expense",
+      "category": "月卡",
+      "note": "沃尔玛",
+      "date": "2025-12-27T12:00:00",
+      "createdAt": "2025-12-27T12:00:00"
+    },
+    {
+      "id": "03a0eff5-035c-4205-be6e-6142985d98a8",
+      "amount": 99.23,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2025-12-26T12:00:00",
+      "createdAt": "2025-12-26T12:00:00"
+    },
+    {
+      "id": "f5d8c5a6-1994-4848-a9a1-63ff146033fc",
+      "amount": 132.8,
+      "type": "expense",
+      "category": "日用品",
+      "note": "",
+      "date": "2025-12-26T12:00:00",
+      "createdAt": "2025-12-26T12:00:00"
+    },
+    {
+      "id": "4fc16079-57e9-4a58-9fcb-6c151d139f33",
+      "amount": 88.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "14",
+      "date": "2025-12-26T12:00:00",
+      "createdAt": "2025-12-26T12:00:00"
+    },
+    {
+      "id": "19b01dfc-46c2-44d1-b2fb-e2cb1d6da8eb",
+      "amount": 29.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-25T12:00:00",
+      "createdAt": "2025-12-25T12:00:00"
+    },
+    {
+      "id": "9ba25d43-3f48-4880-84fa-f7d9b4657392",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-24T12:00:00",
+      "createdAt": "2025-12-24T12:00:00"
+    },
+    {
+      "id": "5e748736-7916-4e35-8240-e80d77e09a34",
+      "amount": 2.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-24T12:00:00",
+      "createdAt": "2025-12-24T12:00:00"
+    },
+    {
+      "id": "bbd8bf0a-d49d-43d7-ba01-efd6c9ef6b2e",
+      "amount": 12.18,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2025-12-24T12:00:00",
+      "createdAt": "2025-12-24T12:00:00"
+    },
+    {
+      "id": "ff2887c3-421f-444c-bb06-d54550e27d82",
+      "amount": 3.9,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-24T12:00:00",
+      "createdAt": "2025-12-24T12:00:00"
+    },
+    {
+      "id": "ef3523a1-384b-4f1a-b2e2-c4e4a1dd5420",
+      "amount": 130.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-24T12:00:00",
+      "createdAt": "2025-12-24T12:00:00"
+    },
+    {
+      "id": "7ec61765-ca76-4559-b111-43252afc8d67",
+      "amount": 13.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2025-12-22T12:00:00",
+      "createdAt": "2025-12-22T12:00:00"
+    },
+    {
+      "id": "ed6f9a13-e565-4fa6-bf86-83dd6a30706a",
+      "amount": 36.4,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-20T12:00:00",
+      "createdAt": "2025-12-20T12:00:00"
+    },
+    {
+      "id": "11225e70-f3c0-4207-aeac-dbe2d097a5de",
+      "amount": 37.87,
+      "type": "expense",
+      "category": "护肤品",
+      "note": "面霜",
+      "date": "2025-12-19T12:00:00",
+      "createdAt": "2025-12-19T12:00:00"
+    },
+    {
+      "id": "7dc8e80a-6a63-4c2a-90cf-9a617c11c7ca",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-18T12:00:00",
+      "createdAt": "2025-12-18T12:00:00"
+    },
+    {
+      "id": "e16509d2-dbdb-490b-91e7-deae22c1ee7a",
+      "amount": 12.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2025-12-18T12:00:00",
+      "createdAt": "2025-12-18T12:00:00"
+    },
+    {
+      "id": "89b1f903-a6a4-4467-82c3-6d73bca5934a",
+      "amount": 9.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-17T12:00:00",
+      "createdAt": "2025-12-17T12:00:00"
+    },
+    {
+      "id": "e690b619-22e9-4736-8f5a-5a5aef470176",
+      "amount": 101.6,
+      "type": "expense",
+      "category": "保健品",
+      "note": "益生菌",
+      "date": "2025-12-17T12:00:00",
+      "createdAt": "2025-12-17T12:00:00"
+    },
+    {
+      "id": "f9d853cd-35e6-4a50-a8a5-4f264608e17f",
+      "amount": 54.31,
+      "type": "expense",
+      "category": "零食",
+      "note": "",
+      "date": "2025-12-17T12:00:00",
+      "createdAt": "2025-12-17T12:00:00"
+    },
+    {
+      "id": "38bed51e-8ca0-49a3-9336-89ff8b11e688",
+      "amount": 14.59,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-16T12:00:00",
+      "createdAt": "2025-12-16T12:00:00"
+    },
+    {
+      "id": "1636aae5-e426-4cff-b3ac-1d4fe617cb87",
+      "amount": 94.78,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-16T12:00:00",
+      "createdAt": "2025-12-16T12:00:00"
+    },
+    {
+      "id": "920445fc-8af8-4396-8e85-6583675f2b83",
+      "amount": 3.99,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-15T12:00:00",
+      "createdAt": "2025-12-15T12:00:00"
+    },
+    {
+      "id": "324f84f7-0748-4b24-aff3-4e4fd11bc32c",
+      "amount": 21.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "icloud",
+      "date": "2025-12-13T12:00:00",
+      "createdAt": "2025-12-13T12:00:00"
+    },
+    {
+      "id": "0100c53b-a543-43d1-b2b1-5435408480a5",
+      "amount": 103.13,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-12T12:00:00",
+      "createdAt": "2025-12-12T12:00:00"
+    },
+    {
+      "id": "66ce2172-a84a-4db6-b35d-c5cba0da46dc",
+      "amount": 100.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2025-12-11T12:00:00",
+      "createdAt": "2025-12-11T12:00:00"
+    },
+    {
+      "id": "afe113af-0c4d-446a-88a6-0efad92f3c59",
+      "amount": 5.93,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-11T12:00:00",
+      "createdAt": "2025-12-11T12:00:00"
+    },
+    {
+      "id": "bbcce206-da80-4e21-b0ce-05f874827dad",
+      "amount": 13.28,
+      "type": "expense",
+      "category": "奶茶",
+      "note": "",
+      "date": "2025-12-11T12:00:00",
+      "createdAt": "2025-12-11T12:00:00"
+    },
+    {
+      "id": "427632f0-67b4-4b55-9b2f-9422991f95eb",
+      "amount": 2.99,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-10T12:00:00",
+      "createdAt": "2025-12-10T12:00:00"
+    },
+    {
+      "id": "8a32f826-7a71-49c4-b119-7f4b536e5650",
+      "amount": 50.0,
+      "type": "expense",
+      "category": "理发",
+      "note": "",
+      "date": "2025-12-09T12:00:00",
+      "createdAt": "2025-12-09T12:00:00"
+    },
+    {
+      "id": "6f0b7b1f-14d9-4c34-83e8-0bd5e754d83d",
+      "amount": 30.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "鹰角",
+      "date": "2025-12-06T12:00:00",
+      "createdAt": "2025-12-06T12:00:00"
+    },
+    {
+      "id": "8e665deb-466c-4128-b8e3-df9bc595608d",
+      "amount": 5.92,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-05T12:00:00",
+      "createdAt": "2025-12-05T12:00:00"
+    },
+    {
+      "id": "fdaa737f-4721-42cd-a5f6-dee8e9b944ce",
+      "amount": 58.99,
+      "type": "expense",
+      "category": "数码",
+      "note": "type-c-网口",
+      "date": "2025-12-05T12:00:00",
+      "createdAt": "2025-12-05T12:00:00"
+    },
+    {
+      "id": "c96d94ca-58ae-442c-9cd3-71c2ff989726",
+      "amount": 18.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-04T12:00:00",
+      "createdAt": "2025-12-04T12:00:00"
+    },
+    {
+      "id": "7ae590cf-acbc-4f3c-9e36-af8293c8b84c",
+      "amount": 9.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-03T12:00:00",
+      "createdAt": "2025-12-03T12:00:00"
+    },
+    {
+      "id": "2cd27fcc-bae8-4396-a48e-d1b5359982d1",
+      "amount": 10.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2025-12-03T12:00:00",
+      "createdAt": "2025-12-03T12:00:00"
+    },
+    {
+      "id": "035774bf-f19a-4dcd-a5f3-3b22d23611b1",
+      "amount": 35.8,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-12-02T12:00:00",
+      "createdAt": "2025-12-02T12:00:00"
+    },
+    {
+      "id": "9c7182a9-34f4-4322-bc01-694659950e6d",
+      "amount": 16.0,
+      "type": "expense",
+      "category": "奶茶",
+      "note": "",
+      "date": "2025-12-01T12:00:00",
+      "createdAt": "2025-12-01T12:00:00"
+    },
+    {
+      "id": "8dc74aa5-e2c2-44e2-b0b0-af50862a5504",
+      "amount": 30.49,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-30T12:00:00",
+      "createdAt": "2025-11-30T12:00:00"
+    },
+    {
+      "id": "c09d9ab9-2033-426d-a9e0-2f9d2c860dd5",
+      "amount": 3.99,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-28T12:00:00",
+      "createdAt": "2025-11-28T12:00:00"
+    },
+    {
+      "id": "f573a1b6-eccb-466f-a7e4-a9e6e934b6a8",
+      "amount": 8.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-26T12:00:00",
+      "createdAt": "2025-11-26T12:00:00"
+    },
+    {
+      "id": "ceed4ab3-fa15-4602-a57c-80eaddeba8a3",
+      "amount": 99.9,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2025-11-25T12:00:00",
+      "createdAt": "2025-11-25T12:00:00"
+    },
+    {
+      "id": "0da767a4-543c-4938-9ea6-0818f4763d06",
+      "amount": 313.6,
+      "type": "expense",
+      "category": "零食",
+      "note": "",
+      "date": "2025-11-24T12:00:00",
+      "createdAt": "2025-11-24T12:00:00"
+    },
+    {
+      "id": "5c6a174d-cc8c-45f9-bb2b-789a602188b8",
+      "amount": 32.07,
+      "type": "expense",
+      "category": "衣物",
+      "note": "",
+      "date": "2025-11-22T12:00:00",
+      "createdAt": "2025-11-22T12:00:00"
+    },
+    {
+      "id": "ecba5427-80ba-465f-890f-1a728737f94e",
+      "amount": 36.64,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-22T12:00:00",
+      "createdAt": "2025-11-22T12:00:00"
+    },
+    {
+      "id": "87e22476-790b-4da4-849a-7b0964f91cbe",
+      "amount": 7.07,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-21T12:00:00",
+      "createdAt": "2025-11-21T12:00:00"
+    },
+    {
+      "id": "916e45d6-e5a6-4d06-a7e3-d2a808910388",
+      "amount": 13.5,
+      "type": "expense",
+      "category": "奶茶",
+      "note": "",
+      "date": "2025-11-21T12:00:00",
+      "createdAt": "2025-11-21T12:00:00"
+    },
+    {
+      "id": "f92c0260-7e9f-433a-978b-7eb3cc09cde5",
+      "amount": 4.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-20T12:00:00",
+      "createdAt": "2025-11-20T12:00:00"
+    },
+    {
+      "id": "19f65e37-3898-4549-813f-b50e6defb3a1",
+      "amount": 12.9,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2025-11-20T12:00:00",
+      "createdAt": "2025-11-20T12:00:00"
+    },
+    {
+      "id": "658fd52a-713e-44d7-927b-29a337a6a206",
+      "amount": 7.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-20T12:00:00",
+      "createdAt": "2025-11-20T12:00:00"
+    },
+    {
+      "id": "d15379db-d69e-4934-aecc-78eaec232104",
+      "amount": 5.97,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-18T12:00:00",
+      "createdAt": "2025-11-18T12:00:00"
+    },
+    {
+      "id": "3324a79a-56cf-4941-9ac7-450d9c90b832",
+      "amount": 19.5,
+      "type": "expense",
+      "category": "饮料",
+      "note": "",
+      "date": "2025-11-16T12:00:00",
+      "createdAt": "2025-11-16T12:00:00"
+    },
+    {
+      "id": "c0c26a21-1275-4a41-8a43-8f1fc6ff2890",
+      "amount": 4.49,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-16T12:00:00",
+      "createdAt": "2025-11-16T12:00:00"
+    },
+    {
+      "id": "2306e552-a062-48a7-8b7f-692465436cdf",
+      "amount": 1.0,
+      "type": "expense",
+      "category": "游玩",
+      "note": "",
+      "date": "2025-11-15T12:00:00",
+      "createdAt": "2025-11-15T12:00:00"
+    },
+    {
+      "id": "795e28cf-59c4-4135-9cdb-7a4c77e9c54b",
+      "amount": 11.0,
+      "type": "expense",
+      "category": "奶茶",
+      "note": "",
+      "date": "2025-11-15T12:00:00",
+      "createdAt": "2025-11-15T12:00:00"
+    },
+    {
+      "id": "5293d665-16b6-4999-a183-0250f3785bff",
+      "amount": 2.97,
+      "type": "expense",
+      "category": "饮料",
+      "note": "",
+      "date": "2025-11-14T12:00:00",
+      "createdAt": "2025-11-14T12:00:00"
+    },
+    {
+      "id": "068ac8f4-b4c9-4ea9-ab83-00df31d3ef27",
+      "amount": 21.0,
+      "type": "expense",
+      "category": "月卡",
+      "note": "icloud",
+      "date": "2025-11-13T12:00:00",
+      "createdAt": "2025-11-13T12:00:00"
+    },
+    {
+      "id": "d795f8da-30b1-4629-b215-b13d11667048",
+      "amount": 9.98,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-13T12:00:00",
+      "createdAt": "2025-11-13T12:00:00"
+    },
+    {
+      "id": "ad2fc832-0aec-4c09-9194-71814eb4e1b6",
+      "amount": 28.98,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-13T12:00:00",
+      "createdAt": "2025-11-13T12:00:00"
+    },
+    {
+      "id": "8c4bcc78-fda3-4782-9caf-d6f86b30178d",
+      "amount": 5.97,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-12T12:00:00",
+      "createdAt": "2025-11-12T12:00:00"
+    },
+    {
+      "id": "650dea83-126e-43af-976f-99ff0fe87b85",
+      "amount": 10.99,
+      "type": "expense",
+      "category": "咖啡",
+      "note": "",
+      "date": "2025-11-11T12:00:00",
+      "createdAt": "2025-11-11T12:00:00"
+    },
+    {
+      "id": "cc35fa69-bb60-46d9-8e55-4bbd7d590439",
+      "amount": 36.0,
+      "type": "expense",
+      "category": "游戏",
+      "note": "登山",
+      "date": "2025-11-11T12:00:00",
+      "createdAt": "2025-11-11T12:00:00"
+    },
+    {
+      "id": "cf2acb1f-9990-4d1e-b86e-7c52caff5a69",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "饮料",
+      "note": "",
+      "date": "2025-11-11T12:00:00",
+      "createdAt": "2025-11-11T12:00:00"
+    },
+    {
+      "id": "ac65b44f-54fa-4e0e-a29c-687f13593385",
+      "amount": 98.69,
+      "type": "expense",
+      "category": "游戏",
+      "note": "零轨",
+      "date": "2025-11-08T12:00:00",
+      "createdAt": "2025-11-08T12:00:00"
+    },
+    {
+      "id": "ab1aefd9-0e91-4feb-b569-c73381ebcefb",
+      "amount": 40.0,
+      "type": "expense",
+      "category": "电影",
+      "note": "龙女仆",
+      "date": "2025-11-07T12:00:00",
+      "createdAt": "2025-11-07T12:00:00"
+    },
+    {
+      "id": "c5e6ff07-df9c-4be5-a250-1c3771d9c33f",
+      "amount": 20.46,
+      "type": "expense",
+      "category": "游戏",
+      "note": "",
+      "date": "2025-11-07T12:00:00",
+      "createdAt": "2025-11-07T12:00:00"
+    },
+    {
+      "id": "c7c441f9-5026-4fed-95c0-d248c14fb2a0",
+      "amount": 39.87,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "爆米花",
+      "date": "2025-11-07T12:00:00",
+      "createdAt": "2025-11-07T12:00:00"
+    },
+    {
+      "id": "5fa09bba-4fd8-42fa-ab02-bb8c22935eb5",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-07T12:00:00",
+      "createdAt": "2025-11-07T12:00:00"
+    },
+    {
+      "id": "d7d1f534-5509-4ab9-9e45-bce5ba86a9ad",
+      "amount": 25.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-07T12:00:00",
+      "createdAt": "2025-11-07T12:00:00"
+    },
+    {
+      "id": "33cc02da-1439-46a6-b62b-82231a4b8c82",
+      "amount": 3.0,
+      "type": "expense",
+      "category": "饮料",
+      "note": "",
+      "date": "2025-11-07T12:00:00",
+      "createdAt": "2025-11-07T12:00:00"
+    },
+    {
+      "id": "d02fdf28-2f54-4300-9ca5-825c07237b84",
+      "amount": 4.46,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-06T12:00:00",
+      "createdAt": "2025-11-06T12:00:00"
+    },
+    {
+      "id": "c74a539b-55e5-44b7-984b-0b184117e552",
+      "amount": 100.0,
+      "type": "expense",
+      "category": "话费",
+      "note": "",
+      "date": "2025-11-06T12:00:00",
+      "createdAt": "2025-11-06T12:00:00"
+    },
+    {
+      "id": "2fed48f7-ffa4-4fff-9611-b8cf353ac2fa",
+      "amount": 57.85,
+      "type": "expense",
+      "category": "日用品",
+      "note": "",
+      "date": "2025-11-06T12:00:00",
+      "createdAt": "2025-11-06T12:00:00"
+    },
+    {
+      "id": "938b98a3-4271-4a48-ad11-d26cb3daa219",
+      "amount": 15.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-06T12:00:00",
+      "createdAt": "2025-11-06T12:00:00"
+    },
+    {
+      "id": "a3af9195-f2fa-47b4-83ca-23d66bdda6b3",
+      "amount": 22.0,
+      "type": "expense",
+      "category": "零食",
+      "note": "",
+      "date": "2025-11-06T12:00:00",
+      "createdAt": "2025-11-06T12:00:00"
+    },
+    {
+      "id": "a8db234a-39ea-4db2-938d-d7959dd51629",
+      "amount": 29.85,
+      "type": "expense",
+      "category": "月卡",
+      "note": "鹰角",
+      "date": "2025-11-04T12:00:00",
+      "createdAt": "2025-11-04T12:00:00"
+    },
+    {
+      "id": "863c407e-2413-4036-a17b-a78111928605",
+      "amount": 5.0,
+      "type": "expense",
+      "category": "餐饮",
+      "note": "",
+      "date": "2025-11-03T12:00:00",
+      "createdAt": "2025-11-03T12:00:00"
+    }
+  ],
+  "categories": [
+    {
+      "name": "餐饮",
+      "icon": "🍜",
+      "color": "#FF6B6B",
+      "type": "expense"
+    },
+    {
+      "name": "咖啡",
+      "icon": "☕",
+      "color": "#8B4513",
+      "type": "expense"
+    },
+    {
+      "name": "奶茶",
+      "icon": "🧋",
+      "color": "#DDA0DD",
+      "type": "expense"
+    },
+    {
+      "name": "饮料",
+      "icon": "🥤",
+      "color": "#45B7D1",
+      "type": "expense"
+    },
+    {
+      "name": "零食",
+      "icon": "🍿",
+      "color": "#F39C12",
+      "type": "expense"
+    },
+    {
+      "name": "月卡",
+      "icon": "🎫",
+      "color": "#9B59B6",
+      "type": "expense"
+    },
+    {
+      "name": "年卡",
+      "icon": "🎟️",
+      "color": "#8E44AD",
+      "type": "expense"
+    },
+    {
+      "name": "年费",
+      "icon": "💳",
+      "color": "#6C5CE7",
+      "type": "expense"
+    },
+    {
+      "name": "游戏",
+      "icon": "🎮",
+      "color": "#74B9FF",
+      "type": "expense"
+    },
+    {
+      "name": "氪金",
+      "icon": "💎",
+      "color": "#00CEC9",
+      "type": "expense"
+    },
+    {
+      "name": "电影",
+      "icon": "🎬",
+      "color": "#E17055",
+      "type": "expense"
+    },
+    {
+      "name": "游玩",
+      "icon": "🎡",
+      "color": "#FD79A8",
+      "type": "expense"
+    },
+    {
+      "name": "数码",
+      "icon": "📱",
+      "color": "#0984E3",
+      "type": "expense"
+    },
+    {
+      "name": "日用品",
+      "icon": "🧴",
+      "color": "#00B894",
+      "type": "expense"
+    },
+    {
+      "name": "护肤品",
+      "icon": "💄",
+      "color": "#E84393",
+      "type": "expense"
+    },
+    {
+      "name": "卫生用品",
+      "icon": "🧻",
+      "color": "#A29BFE",
+      "type": "expense"
+    },
+    {
+      "name": "衣服",
+      "icon": "👕",
+      "color": "#FDCB6E",
+      "type": "expense"
+    },
+    {
+      "name": "衣物",
+      "icon": "👔",
+      "color": "#FDCB6E",
+      "type": "expense"
+    },
+    {
+      "name": "周边",
+      "icon": "🧸",
+      "color": "#FF7675",
+      "type": "expense"
+    },
+    {
+      "name": "购物",
+      "icon": "🛒",
+      "color": "#D63031",
+      "type": "expense"
+    },
+    {
+      "name": "茶具",
+      "icon": "🫖",
+      "color": "#55A3FF",
+      "type": "expense"
+    },
+    {
+      "name": "茶叶",
+      "icon": "🍵",
+      "color": "#00B894",
+      "type": "expense"
+    },
+    {
+      "name": "保健品",
+      "icon": "💊",
+      "color": "#E74C3C",
+      "type": "expense"
+    },
+    {
+      "name": "理发",
+      "icon": "✂️",
+      "color": "#F39C12",
+      "type": "expense"
+    },
+    {
+      "name": "话费",
+      "icon": "📞",
+      "color": "#E67E22",
+      "type": "expense"
+    },
+    {
+      "name": "分期",
+      "icon": "💰",
+      "color": "#D35400",
+      "type": "expense"
+    },
+    {
+      "name": "驾照",
+      "icon": "📋",
+      "color": "#1ABC9C",
+      "type": "expense"
+    },
+    {
+      "name": "出行",
+      "icon": "🚕",
+      "color": "#16A085",
+      "type": "expense"
+    },
+    {
+      "name": "书",
+      "icon": "📚",
+      "color": "#9B59B6",
+      "type": "expense"
+    },
+    {
+      "name": "AI",
+      "icon": "🤖",
+      "color": "#34495E",
+      "type": "expense"
+    },
+    {
+      "name": "ai",
+      "icon": "🤖",
+      "color": "#5D6D7E",
+      "type": "expense"
+    },
+    {
+      "name": "梯子",
+      "icon": "🔗",
+      "color": "#7F8C8D",
+      "type": "expense"
+    },
+    {
+      "name": "工具",
+      "icon": "🔧",
+      "color": "#95A5A6",
+      "type": "expense"
+    },
+    {
+      "name": "工资",
+      "icon": "💰",
+      "color": "#27AE60",
+      "type": "income"
+    },
+    {
+      "name": "奖金",
+      "icon": "🎁",
+      "color": "#F39C12",
+      "type": "income"
+    },
+    {
+      "name": "投资",
+      "icon": "📈",
+      "color": "#8E44AD",
+      "type": "income"
+    },
+    {
+      "name": "兼职",
+      "icon": "💼",
+      "color": "#2980B9",
+      "type": "income"
+    },
+    {
+      "name": "其他-收入",
+      "icon": "📝",
+      "color": "#7F8C8D",
+      "type": "income"
+    }
+  ],
+  "budgets": {
+    "monthly": 0,
+    "categories": {}
+  }
+}
