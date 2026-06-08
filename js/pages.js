@@ -234,10 +234,11 @@ const Pages = {
     this._renderCategories();
     this._setDefaultDate();
 
-    // 显示 toast
+    // 成功反馈：震动 + 居中弹窗
+    if (navigator.vibrate) navigator.vibrate(50);
     const toast = document.getElementById('save-toast');
     toast.style.opacity = '1';
-    setTimeout(() => { toast.style.opacity = '0'; }, 1500);
+    setTimeout(() => { toast.style.opacity = '0'; }, 1200);
   },
 
   // ===== 明细页面 =====
