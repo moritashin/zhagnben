@@ -40,6 +40,10 @@ const Pages = {
 
     if (page === 'list') this._refreshList();
     if (page === 'stats') this._refreshStats();
+
+    // 浮动保存按钮只在记账页面显示
+    const floatSave = document.getElementById('float-save');
+    if (floatSave) floatSave.classList.toggle('hidden', page !== 'add');
   },
 
   // ===== 记账页面 =====

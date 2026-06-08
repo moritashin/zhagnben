@@ -59,22 +59,7 @@
         </div>
 
         <!-- 占位，给浮动按钮留空间 -->
-        <div class="h-20"></div>
-      </div>
-
-      <!-- 浮动保存按钮 -->
-      <div class="fixed bottom-[72px] left-0 right-0 z-30 px-4 max-w-md mx-auto">
-        <button id="btn-save" class="w-full py-3.5 rounded-xl text-white font-bold text-lg transition-all bg-red-500 hover:bg-red-600 active:scale-[0.98] shadow-xl shadow-red-500/30">
-          💾 保存
-        </button>
-      </div>
-
-      <!-- 保存成功反馈 -->
-      <div id="save-toast" class="fixed inset-0 flex items-center justify-center pointer-events-none z-50 opacity-0 transition-opacity duration-300">
-        <div class="bg-gray-900/90 backdrop-blur-sm text-white px-8 py-4 rounded-2xl text-center">
-          <div class="text-3xl mb-1">✅</div>
-          <div class="text-base font-bold">保存成功</div>
-        </div>
+        <div class="h-24"></div>
       </div>
     </section>
 
@@ -291,6 +276,23 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- 浮动保存按钮（记账页面专用） -->
+    <div id="float-save" class="fixed bottom-20 left-0 right-0 z-50 px-4 hidden">
+      <div class="max-w-md mx-auto">
+        <button id="btn-save" class="w-full py-3.5 rounded-xl text-white font-bold text-lg transition-all bg-red-500 hover:bg-red-600 active:scale-[0.98] shadow-xl shadow-red-500/30">
+          💾 保存
+        </button>
+      </div>
+    </div>
+
+    <!-- 保存成功反馈（全屏居中） -->
+    <div id="save-toast" class="fixed inset-0 flex items-center justify-center pointer-events-none z-[60] opacity-0 transition-opacity duration-300">
+      <div class="bg-gray-900/90 backdrop-blur-sm text-white px-10 py-6 rounded-2xl text-center shadow-2xl">
+        <div class="text-4xl mb-2">✅</div>
+        <div class="text-lg font-bold">保存成功</div>
       </div>
     </div>
 
