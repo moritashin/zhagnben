@@ -10,6 +10,7 @@ const Pages = {
     this._initCatModal();
     this._renderCategories();
     this._setDefaultDate();
+    this._updateFloatSave();
   },
 
   // ===== 导航 =====
@@ -41,9 +42,15 @@ const Pages = {
     if (page === 'list') this._refreshList();
     if (page === 'stats') this._refreshStats();
 
-    // 浮动保存按钮只在记账页面显示
+    this._updateFloatSave();
+  },
+
+  // 浮动保存按钮只在记账页面且分类弹窗关闭时显示
+  _updateFloatSave() {
     const floatSave = document.getElementById('float-save');
-    if (floatSave) floatSave.classList.toggle('hidden', page !== 'add');
+    if (!floatSave) return;
+    const catModalOpen = !document.getElementById('cat-modal').classList.contains('hidden');
+    floatSave.classList.toggle('hidden', currentPage !== 'add' || catModalOpen);
   },
 
   // ===== 记账页面 =====
@@ -70,11 +77,13 @@ const Pages = {
   _openCatModal() {
     document.getElementById('cat-modal').classList.remove('hidden');
     this._renderCatList();
+    this._updateFloatSave();
     document.body.style.overflow = 'hidden';
   },
 
   _closeCatModal() {
     document.getElementById('cat-modal').classList.add('hidden');
+    this._updateFloatSave();
     document.body.style.overflow = '';
   },
 
