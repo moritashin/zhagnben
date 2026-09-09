@@ -580,17 +580,29 @@ const Pages = {
 
     const year = yearSelect.value || years[0];
     const items = Storage.filterByYear(year, 'all');
+    // 日常口径：收入全部 + 计入预算的支出
+    const dailyItems = items.filter(t => t.type === 'income' || t.countInBudget);
 
     const income = items.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
-    const expense = items.filter(t => t.type === 'expense').reduce((s, t) => s + t.amount, 0);
+    const expense = dailyItems.filter(t => t.type === 'expense').reduce((s, t) => s + t.amount, 0);
+    const bigExpense = items.filter(t => t.type === 'expense' && !t.countInBudget).reduce((s, t) => s + t.amount, 0);
 
     document.getElementById('year-income').textContent = formatCurrency(income);
     document.getElementById('year-expense').textContent = formatCurrency(expense);
     document.getElementById('year-balance').textContent = formatCurrency(income - expense);
 
+    // 年度大额支出行，为 0 时隐藏
+    const yearBigEl = document.getElementById('year-big-expense');
+    if (bigExpense > 0) {
+      yearBigEl.textContent = `其中大额支出（不计入预算）：${formatCurrency(bigExpense)}`;
+      yearBigEl.classList.remove('hidden');
+    } else {
+      yearBigEl.classList.add('hidden');
+    }
+
     // 年度分类汇总
     const catList = document.getElementById('year-category-list');
-    const expenseItems = items.filter(t => t.type === 'expense');
+    const expenseItems = dailyItems.filter(t => t.type === 'expense');
 
     if (expenseItems.length === 0) {
       catList.innerHTML = '<div class="text-center text-gray-400 text-sm py-4">暂无数据</div>';

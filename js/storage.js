@@ -222,7 +222,7 @@ const Storage = {
         return String(d.getMonth() + 1).padStart(2, '0') === monthNum;
       });
       const income = monthItems.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
-      const expense = monthItems.filter(t => t.type === 'expense').reduce((s, t) => s + t.amount, 0);
+      const expense = monthItems.filter(t => t.type === 'expense' && t.countInBudget).reduce((s, t) => s + t.amount, 0);
       return { month: m + '月', income, expense };
     });
   },
