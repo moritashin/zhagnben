@@ -58,6 +58,8 @@ const Storage = {
         note: t.note || '',
         date: t.date || new Date().toISOString(),
         createdAt: t.createdAt || new Date().toISOString(),
+        // 旧数据无此字段，读取时自动默认为 true（计入预算），无需数据迁移
+        countInBudget: t.countInBudget !== false,
       }));
     } catch {
       return [];
@@ -78,6 +80,8 @@ const Storage = {
       note: transaction.note || '',
       date: transaction.date,
       createdAt: new Date().toISOString(),
+      // 收入不参与预算，恒为 true；支出缺省计入预算
+      countInBudget: transaction.type === 'income' ? true : transaction.countInBudget !== false,
     };
     this.save([newItem, ...items]);
     return newItem;
@@ -86,6 +90,16 @@ const Storage = {
   delete(id) {
     const items = this.getAll().filter(t => t.id !== id);
     this.save(items);
+  },
+
+  updateTransaction(id, patch) {
+    const items = this.getAll();
+    const index = items.findIndex(t => t.id === id);
+    if (index === -1) return false;
+    // 不可变更新：用新对象替换，不修改原对象
+    items[index] = { ...items[index], ...patch, id };
+    this.save(items);
+    return true;
   },
 
   // ===== 分类管理 =====
@@ -241,7 +255,8 @@ const Storage = {
 
   getMonthlyBudgetUsage(month) {
     const budgets = this.getBudgets();
-    const items = this.filterByMonth(month, 'expense');
+    // 只统计计入预算的支出
+    const items = this.filterByMonth(month, 'expense').filter(t => t.countInBudget);
     const spent = items.reduce((s, t) => s + t.amount, 0);
     return {
       budget: budgets.monthly,
@@ -256,7 +271,7 @@ const Storage = {
     const budgets = this.getBudgets();
     const items = this.getAll().filter(t => {
       const d = new Date(t.date);
-      return t.type === 'expense' && t.category === category && d.getFullYear() === year;
+      return t.type === 'expense' && t.category === category && t.countInBudget && d.getFullYear() === year;
     });
     const spent = items.reduce((s, t) => s + t.amount, 0);
     const budget = budgets.categories[category] || 0;
