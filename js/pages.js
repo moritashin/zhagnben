@@ -319,6 +319,11 @@ const Pages = {
     items.forEach(t => {
       const meta = Storage.getCategoryMeta(t.category);
       const isExpense = t.type === 'expense';
+      const budgetBadge = isExpense
+        ? (t.countInBudget
+          ? '<span class="budget-badge text-[10px] px-1.5 py-0.5 rounded bg-gray-50 text-gray-300 cursor-pointer select-none">预算内</span>'
+          : '<span class="budget-badge text-[10px] px-1.5 py-0.5 rounded bg-orange-50 text-orange-500 cursor-pointer select-none">不计入</span>')
+        : '';
       const row = document.createElement('div');
       row.className = 'tx-row flex items-center gap-3 py-3 border-b border-gray-50';
       row.innerHTML = `
@@ -327,7 +332,7 @@ const Pages = {
         </div>
         <div class="flex-1 min-w-0">
           <div class="flex items-center justify-between">
-            <span class="font-medium text-sm">${t.category}</span>
+            <span class="font-medium text-sm flex items-center gap-1.5">${t.category}${budgetBadge}</span>
             <span class="font-bold text-sm ${isExpense ? 'text-red-500' : 'text-green-500'}">
               ${isExpense ? '-' : '+'}${formatCurrency(t.amount)}
             </span>
@@ -349,6 +354,15 @@ const Pages = {
           this._refreshList();
         }
       });
+
+      const badge = row.querySelector('.budget-badge');
+      if (badge) {
+        badge.addEventListener('click', () => {
+          Storage.updateTransaction(t.id, { countInBudget: !t.countInBudget });
+          if (navigator.vibrate) navigator.vibrate(30);
+          this._refreshList();
+        });
+      }
     });
   },
 
