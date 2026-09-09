@@ -1,5 +1,6 @@
 let currentType = 'expense';
 let currentPage = 'add';
+let countInBudgetState = true;
 
 const Pages = {
   init() {
@@ -59,6 +60,11 @@ const Pages = {
     document.getElementById('btn-income').addEventListener('click', () => this._setType('income'));
     document.getElementById('btn-save').addEventListener('click', () => this._saveTransaction());
     document.getElementById('btn-manage-cats').addEventListener('click', () => this._openCatModal());
+
+    document.getElementById('toggle-count-in-budget').addEventListener('click', () => {
+      countInBudgetState = !countInBudgetState;
+      this._renderBudgetToggle();
+    });
 
     // 金额输入只允许数字和小数点
     const amountInput = document.getElementById('input-amount');
@@ -163,6 +169,16 @@ const Pages = {
     }
   },
 
+  _renderBudgetToggle() {
+    const btn = document.getElementById('toggle-count-in-budget');
+    const thumb = document.getElementById('toggle-thumb');
+    btn.setAttribute('aria-checked', String(countInBudgetState));
+    btn.classList.toggle('bg-red-500', countInBudgetState);
+    btn.classList.toggle('bg-gray-300', !countInBudgetState);
+    thumb.classList.toggle('translate-x-5', countInBudgetState);
+    thumb.classList.toggle('translate-x-0', !countInBudgetState);
+  },
+
   _setType(type) {
     currentType = type;
     const isExpense = type === 'expense';
@@ -177,6 +193,8 @@ const Pages = {
     document.getElementById('amount-symbol').textContent = isExpense ? '-' : '+';
     document.getElementById('btn-save').className =
       `w-full py-4 rounded-xl text-white font-bold text-lg transition-all bg-${color}-500 hover:bg-${color}-600 active:scale-[0.98] shadow-lg shadow-${color}-500/25`;
+
+    document.getElementById('budget-toggle-card').classList.toggle('hidden', !isExpense);
 
     this._renderCategories();
   },
@@ -238,7 +256,7 @@ const Pages = {
       return;
     }
 
-    Storage.add({ amount, type: currentType, category, note, date });
+    Storage.add({ amount, type: currentType, category, note, date, countInBudget: currentType === 'expense' ? countInBudgetState : true });
 
     // 重置表单
     document.getElementById('input-amount').value = '';
@@ -246,6 +264,8 @@ const Pages = {
     document.getElementById('category-grid').dataset.selected = '';
     this._renderCategories();
     this._setDefaultDate();
+    countInBudgetState = true;
+    this._renderBudgetToggle();
 
     // 成功反馈：震动 + 居中弹窗
     if (navigator.vibrate) navigator.vibrate(50);

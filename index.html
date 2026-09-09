@@ -58,6 +58,18 @@
           <input id="input-note" type="text" placeholder="写点什么..." class="w-full bg-transparent outline-none text-base" maxlength="50">
         </div>
 
+        <!-- 计入预算开关（仅支出显示） -->
+        <div id="budget-toggle-card" class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4 flex items-center justify-between">
+          <div>
+            <div class="text-sm font-medium">计入预算</div>
+            <div class="text-xs text-gray-400 mt-0.5">大额一次性支出可关闭</div>
+          </div>
+          <button id="toggle-count-in-budget" type="button" role="switch" aria-checked="true" aria-label="计入预算"
+            class="relative w-11 h-6 rounded-full transition-colors bg-red-500 shrink-0">
+            <span id="toggle-thumb" class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform translate-x-5"></span>
+          </button>
+        </div>
+
         <!-- 占位，给浮动按钮留空间 -->
         <div class="h-24"></div>
       </div>
