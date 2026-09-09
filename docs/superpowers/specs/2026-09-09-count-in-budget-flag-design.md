@@ -12,7 +12,7 @@
 | 决策点 | 结论 |
 |--------|------|
 | 影响范围 | 预算进度条 + 统计页（月度/年度）都排除不计入的支出，并单独显示大额支出金额 |
-| UI 范围 | 仅支出显示开关（收入与预算无关）；明细列表显示 badge 且点击可切换 |
+| UI 范围 | 仅支出显示开关（收入与预算无关）；明细页所有支出记录显示 badge，点击可切换 |
 | 默认值 | 新支出默认 `true`（计入预算） |
 | 趋势图口径 | 跟随所在页面总额口径，排除不计入的支出 |
 | 明细页汇总卡片 | 保持全部口径（列表显示全部记录，汇总需与列表对上） |
@@ -22,7 +22,7 @@
 字段：`countInBudget`，布尔值。
 
 - `getAll()` 读取时规范化：`countInBudget: t.countInBudget !== false`（**已完成**，旧数据无需迁移）
-- `add(transaction)`：接受并保存 `countInBudget`，缺省 `true`
+- `add(transaction)`：接受并保存 `countInBudget`，缺省 `true`；收入记录恒存 `true`（开关对收入隐藏，标志无统计意义，统一存 `true` 保持数据整齐）
 - 新增 `updateTransaction(id, patch)`：不可变方式更新单条记录（返回新数组后整体 save），供明细页切换标志
 - `getMonthlyBudgetUsage(month)`：支出求和前过滤 `t.countInBudget !== false`
 - `getCategoryYearUsage(category, year)`：同样过滤
@@ -37,7 +37,10 @@
 ## 明细页（js/pages.js）
 
 - 列表仍显示全部记录，不做过滤
-- 不计入预算的支出：分类名右侧显示灰色小 badge「不计入预算」
+- **所有支出记录**的分类名右侧都显示可点击的小 badge 作为切换入口：
+  - 计入预算：淡色样式「预算内」（如 `text-gray-300`）
+  - 不计入预算：醒目样式「不计入」（如灰底或橙色）
+  - 收入记录不显示 badge
 - 点击 badge 切换计入/不计入（调用 `updateTransaction`），切换后静默刷新列表；有震动反馈（`navigator.vibrate`，与保存一致）
 - 顶部收入/支出汇总卡片保持全部口径
 
