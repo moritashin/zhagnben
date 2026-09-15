@@ -454,20 +454,17 @@ const Pages = {
 
     const income = items.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
     const expense = dailyItems.filter(t => t.type === 'expense').reduce((s, t) => s + t.amount, 0);
-    const bigExpense = items.filter(t => t.type === 'expense' && !t.countInBudget).reduce((s, t) => s + t.amount, 0);
+    const bigItems = items.filter(t => t.type === 'expense' && !t.countInBudget);
 
     document.getElementById('stats-income').textContent = formatCurrency(income);
     document.getElementById('stats-expense').textContent = formatCurrency(expense);
     document.getElementById('stats-balance').textContent = formatCurrency(income - expense);
 
-    // 大额支出行，为 0 时隐藏
-    const bigEl = document.getElementById('stats-big-expense');
-    if (bigExpense > 0) {
-      bigEl.textContent = `其中大额支出（不计入预算）：${formatCurrency(bigExpense)}`;
-      bigEl.classList.remove('hidden');
-    } else {
-      bigEl.classList.add('hidden');
-    }
+    // 大额支出卡片，为 0 时隐藏
+    this._renderBigExpenseCard(
+      document.getElementById('stats-big-expense'),
+      bigItems, expense, '💸 大额支出（不计入预算）', false
+    );
 
     // 月预算
     const monthlyUsage = Storage.getMonthlyBudgetUsage(month);
@@ -585,20 +582,17 @@ const Pages = {
 
     const income = items.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
     const expense = dailyItems.filter(t => t.type === 'expense').reduce((s, t) => s + t.amount, 0);
-    const bigExpense = items.filter(t => t.type === 'expense' && !t.countInBudget).reduce((s, t) => s + t.amount, 0);
+    const bigItems = items.filter(t => t.type === 'expense' && !t.countInBudget);
 
     document.getElementById('year-income').textContent = formatCurrency(income);
     document.getElementById('year-expense').textContent = formatCurrency(expense);
     document.getElementById('year-balance').textContent = formatCurrency(income - expense);
 
-    // 年度大额支出行，为 0 时隐藏
-    const yearBigEl = document.getElementById('year-big-expense');
-    if (bigExpense > 0) {
-      yearBigEl.textContent = `其中大额支出（不计入预算）：${formatCurrency(bigExpense)}`;
-      yearBigEl.classList.remove('hidden');
-    } else {
-      yearBigEl.classList.add('hidden');
-    }
+    // 年度大额支出卡片，为 0 时隐藏
+    this._renderBigExpenseCard(
+      document.getElementById('year-big-expense'),
+      bigItems, expense, '💸 年度大额支出（不计入预算）', true
+    );
 
     // 年度分类汇总
     const catList = document.getElementById('year-category-list');
@@ -638,5 +632,81 @@ const Pages = {
     // 月度趋势图
     const monthlyData = Storage.getYearMonthlyData(year);
     Charts.renderYearTrend(monthlyData);
+  },
+
+  // 大额支出卡片（月度/年度共用）。dailyExpense 为日常口径支出，
+  // 占比 = 大额 / (日常支出 + 大额)。bigTotal 为 0 时整块隐藏。
+  _renderBigExpenseCard(el, bigItems, dailyExpense, title, withCategoryDist) {
+    const bigTotal = bigItems.reduce((s, t) => s + t.amount, 0);
+    if (bigTotal <= 0) {
+      el.classList.add('hidden');
+      el.innerHTML = '';
+      return;
+    }
+    el.classList.remove('hidden');
+
+    const pct = ((bigTotal / (dailyExpense + bigTotal)) * 100).toFixed(1);
+
+    // 明细：按金额倒序，只读
+    const rows = [...bigItems].sort((a, b) => b.amount - a.amount).map(t => {
+      const meta = Storage.getCategoryMeta(t.category);
+      return `
+        <div class="flex items-center gap-3 py-2 border-b border-gray-50 last:border-0">
+          <div class="w-9 h-9 rounded-full flex items-center justify-center text-base shrink-0" style="background:${meta.color}18">${meta.icon}</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-sm font-medium truncate">${t.category}</span>
+              <span class="text-sm font-bold text-orange-500 shrink-0">-${formatCurrency(t.amount)}</span>
+            </div>
+            <div class="flex items-center justify-between gap-2 mt-0.5">
+              <span class="text-xs text-gray-400 truncate">${t.note || ''}</span>
+              <span class="text-xs text-gray-400 shrink-0">${formatDateMD(t.date)}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    // 年度：分类分布（复用年度分类汇总的进度条行模式）
+    let catHtml = '';
+    if (withCategoryDist) {
+      const grouped = {};
+      bigItems.forEach(t => { grouped[t.category] = (grouped[t.category] || 0) + t.amount; });
+      const sorted = Object.entries(grouped).sort((a, b) => b[1] - a[1]);
+      catHtml = `
+        <div class="text-xs text-gray-400 mt-3 mb-2 pt-3 border-t border-gray-50">分类分布</div>
+        <div class="space-y-2">
+          ${sorted.map(([name, amount]) => {
+            const meta = Storage.getCategoryMeta(name);
+            const p = ((amount / bigTotal) * 100).toFixed(1);
+            return `
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm shrink-0" style="background:${meta.color}18">${meta.icon}</div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm">${name}</span>
+                    <span class="text-sm font-bold">${formatCurrency(amount)}</span>
+                  </div>
+                  <div class="w-full bg-gray-100 rounded-full h-1.5 mt-1">
+                    <div class="h-1.5 rounded-full" style="width:${p}%;background:${meta.color}"></div>
+                  </div>
+                </div>
+                <span class="text-xs text-gray-400 w-10 text-right">${p}%</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    el.innerHTML = `
+      <h3 class="text-sm font-bold text-orange-500 mb-1">${title}</h3>
+      <div class="flex items-end justify-between mb-2 gap-2">
+        <span class="text-lg font-bold text-orange-500">${formatCurrency(bigTotal)}</span>
+        <span class="text-xs text-orange-400 shrink-0">${bigItems.length} 笔 · 占全部支出 ${pct}%</span>
+      </div>
+      <div class="max-h-60 overflow-y-auto">${rows}</div>
+      ${catHtml}
+    `;
   },
 };

@@ -157,7 +157,7 @@ const Charts = {
     const canvas = document.getElementById('chart-year-trend');
     const empty = document.getElementById('chart-year-trend-empty');
 
-    const hasData = monthlyData.some(d => d.income > 0 || d.expense > 0);
+    const hasData = monthlyData.some(d => d.income > 0 || d.expense > 0 || (d.bigExpense || 0) > 0);
     if (!hasData) {
       canvas.style.display = 'none';
       empty.classList.remove('hidden');
@@ -170,6 +170,8 @@ const Charts = {
     const labels = monthlyData.map(d => d.month);
     const expenseData = monthlyData.map(d => d.expense);
     const incomeData = monthlyData.map(d => d.income);
+    const bigExpenseData = monthlyData.map(d => d.bigExpense || 0);
+    const hasBig = bigExpenseData.some(v => v > 0);
 
     if (this.yearTrendChart) this.yearTrendChart.destroy();
 
@@ -179,7 +181,7 @@ const Charts = {
         labels,
         datasets: [
           {
-            label: '支出',
+            label: '日常支出',
             data: expenseData,
             backgroundColor: 'rgba(239, 68, 68, 0.6)',
             borderRadius: 3,
@@ -192,6 +194,14 @@ const Charts = {
             borderRadius: 3,
             barPercentage: 0.6,
           },
+          // 大额支出（不计入预算）：仅当年内存在时叠加，避免无谓拥挤
+          ...(hasBig ? [{
+            label: '大额支出',
+            data: bigExpenseData,
+            backgroundColor: 'rgba(249, 115, 22, 0.6)',
+            borderRadius: 3,
+            barPercentage: 0.6,
+          }] : []),
         ],
       },
       options: {

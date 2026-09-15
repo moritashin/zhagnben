@@ -223,7 +223,9 @@ const Storage = {
       });
       const income = monthItems.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
       const expense = monthItems.filter(t => t.type === 'expense' && t.countInBudget).reduce((s, t) => s + t.amount, 0);
-      return { month: m + '月', income, expense };
+      // 大额支出（不计入预算）单独统计，供年度趋势图叠加
+      const bigExpense = monthItems.filter(t => t.type === 'expense' && !t.countInBudget).reduce((s, t) => s + t.amount, 0);
+      return { month: m + '月', income, expense, bigExpense };
     });
   },
 
@@ -338,6 +340,13 @@ function formatDateTime(iso) {
   const h = String(d.getHours()).padStart(2, '0');
   const min = String(d.getMinutes()).padStart(2, '0');
   return `${m}-${day} ${h}:${min}`;
+}
+
+function formatDateMD(iso) {
+  const d = new Date(iso);
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${m}-${day}`;
 }
 
 function getDaysInMonth(yearMonth) {
